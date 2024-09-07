@@ -1,0 +1,1 @@
+<li class="py-3 hover:bg-blue-600 hover:text-white w-full md:w-fit px-5 md:px-4 md:rounded-full"><a href="{{$href}}" class="w-full block">{{$slot}}</a></li>
