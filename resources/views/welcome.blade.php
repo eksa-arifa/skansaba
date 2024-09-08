@@ -96,7 +96,7 @@
     </div>
     <!-- Slider controls -->
     <button type="button"
-        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        class="absolute hidden top-0 start-0 z-30 md:flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-prev>
         <span
             class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
@@ -109,7 +109,7 @@
         </span>
     </button>
     <button type="button"
-        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        class="absolute hidden top-0 end-0 z-30 md:flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-next>
         <span
             class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
@@ -219,6 +219,125 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="w-screen py-4 bg-blue-600 text-white">
+    <div class="relative w-full overflow-hidden">
+        <div class="scroll-container flex justify-center py-8">
+            <!-- First set of images -->
+            <div class="w-[350px] md:w-[225px]">
+                <img class="w-full h-[350px] md:h-[250px] object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/3-1.jpg" alt="konsentrasi keahlian">
+            </div>
+            <div class="w-[350px] md:w-[225px]">
+                <img class="w-full h-[350px] md:h-[250px] object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/4.jpg" alt="konsentrasi keahlian">
+            </div>
+            <div class="w-[350px] md:w-[225px]">
+                <img class="w-full h-[350px] md:h-[250px] object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/5.jpg" alt="konsentrasi keahlian">
+            </div>
+            <div class="w-[350px] md:w-[225px]">
+                <img class="w-full h-[350px] md:h-[250px] object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/6.jpg" alt="konsentrasi keahlian">
+            </div>
+            <div class="w-[350px] md:w-[225px]">
+                <img class="w-full h-[350px] md:h-[250px] object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/7.jpg" alt="konsentrasi keahlian">
+            </div>
+            <div class="w-[350px] md:w-[225px]">
+                <img class="w-full h-[350px] md:h-[250px] object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/8.jpg" alt="konsentrasi keahlian">
+            </div>
+            <div class="w-[350px] md:w-[225px]">
+                <img class="w-full h-[350px] md:h-[250px] object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/9.jpg" alt="konsentrasi keahlian">
+            </div>
+            <div class="w-[350px] md:w-[225px]">
+                <img class="w-full h-[350px] md:h-[250px] object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/10.jpg" alt="konsentrasi keahlian">
+            </div>
+            
+            <!-- Second set of images (duplicate the first set for smooth looping) -->
+            <div class="w-[350px] md:w-[225px]">
+                <img class="w-full h-[350px] md:h-[250px] object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/3-1.jpg" alt="konsentrasi keahlian">
+            </div>
+            <div class="w-[350px] md:w-[225px]">
+                <img class="w-full h-[350px] md:h-[250px] object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/4.jpg" alt="konsentrasi keahlian">
+            </div>
+            <div class="w-[350px] md:w-[225px]">
+                <img class="w-full h-[350px] md:h-[250px] object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/5.jpg" alt="konsentrasi keahlian">
+            </div>
+            <div class="w-[350px] md:w-[225px]">
+                <img class="w-full h-[350px] md:h-[250px] object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/6.jpg" alt="konsentrasi keahlian">
+            </div>
+            <div class="w-[350px] md:w-[225px]">
+                <img class="w-full h-[350px] md:h-[250px] object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/7.jpg" alt="konsentrasi keahlian">
+            </div>
+            <div class="w-[350px] md:w-[225px]">
+                <img class="w-full h-[350px] md:h-[250px] object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/8.jpg" alt="konsentrasi keahlian">
+            </div>
+            <div class="w-[350px] md:w-[225px]">
+                <img class="w-full h-[350px] md:h-[250px] object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/9.jpg" alt="konsentrasi keahlian">
+            </div>
+            <div class="w-[350px] md:w-[225px]">
+                <img class="w-full h-[350px] md:h-[250px] object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/10.jpg" alt="konsentrasi keahlian">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="w-screen py-16 px-10 md:px-36">
+
+<h1 class="text-center text-3xl underline decoration-blue-600">Media</h1>
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 py-8">
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/img_0137.jpg?resize=1500,2000&strip=info" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/img_9885.jpg?resize=1500,1250&strip=info" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/img_0684.jpg?resize=1500,1250&strip=info" alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/img_9487.jpg?resize=1500,1250&strip=info" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/sny01713.jpg?resize=1500,2000&strip=info" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/img_9696.jpg?resize=1500,1250&strip=info" alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/07/img_9834.jpg?resize=1500,1250&strip=info" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/sny01713.jpg?resize=1500,1250&strip=info" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/sny01713.jpg?resize=1500,2000&strip=info" alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/img_9885.jpg?resize=1500,1250&strip=info" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/img_9885.jpg?resize=1500,2000&strip=info" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/img_9885.jpg?resize=1500,1250&strip=info" alt="">
+        </div>
+    </div>
+</div>
+<a href="" class="py-3 px-9 mx-auto cursor-pointer bg-blue-600 text-white rounded-full hover:bg-blue-700 w-fit block">Show More</a>
+
 </div>
 
 @endsection

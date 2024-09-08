@@ -1,5 +1,5 @@
 <li class="py-3 w-full md:w-fit relative" x-data="{isOpen: false}">
-                <a x-on:click="isOpen = !isOpen" x-on:click.away="isOpen = false" class="px-5 md:px-0 flex gap-2 justify-between w-full items-center cursor-pointer">
+                <a x-on:click="isOpen = !isOpen" x-on:click.away="isOpen = false" class="px-5 md:px-0 flex gap-2 justify-between w-full items-center cursor-pointer text-nowrap">
                     <span>{{$title}}</span>
                     <i class="fa-solid" :class="{'fa-chevron-left': !isOpen, 'fa-chevron-down': isOpen}"></i>
                 </a>

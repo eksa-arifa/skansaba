@@ -38,7 +38,6 @@
 </head>
 
 <body>
-    <x-nav.index />
     @yield('body')
 
 
