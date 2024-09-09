@@ -125,8 +125,8 @@
 
 
 <div class="w-screen py-16" x-data="{more: false}">
-    <div class="flex flex-col md:flex-row items-center justify-center gap-10">
-        <img width="350" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/1.png" alt="kepala sekolah">
+    <div class="flex flex-col md:flex-row justify-center gap-10">
+        <img width="350" class="max-h-[350px] h-[350px]" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/1.png" alt="kepala sekolah">
         <div class="md:w-[600px] w-full px-10">
             <div class="border-b-2 border-blue-600">
                 <h2 class="text-4xl">Raharjo, S.IP, M.Pd</h2>
@@ -134,7 +134,7 @@
             </div>
             <div class="w-full relative">
                 <p
-                    class="max-h-[280px] w-full relative overflow-hidden py-3 after:w-full after:absolute after:bottom-0 after:left-0 after:h-36 after:bg-gradient-to-t after:from-white after:to-transparent">
+                    class="w-full relative overflow-hidden py-3 after:w-full after:absolute after:bottom-0 after:left-0 after:h-36 after:from-white after:to-transparent" :class="{'h-[280px]': !more, 'h-fit': more, 'after:bg-transparent': more, 'after:bg-gradient-to-t': !more}">
                     Kami dengan bangga menyambut Anda di halaman website resmi sekolah kami. SMKN 1 Bantul adalah tempat
                     di
                     mana semangat belajar dan karakter berkembang bersama. Kami berkomitmen untuk memberikan pendidikan
@@ -161,39 +161,8 @@
                     tempat
                     yang inspiratif dan penuh semangat. Selamat mengeksplorasi informasi yang ada di sini!
                 </p>
-                <a x-on:click="more = true" class="py-3 px-9 cursor-pointer bg-blue-600 text-white rounded-full absolute bottom-0 left-1/2 translate-x-[-50%] hover:bg-blue-700">Show More</a>
+                <a x-on:click="more = !more" class="py-3 px-9 cursor-pointer bg-blue-600 text-white rounded-full absolute left-1/2 translate-x-[-50%] hover:bg-blue-700" :class="{'bottom-0': !more, 'bottom-[-40px]': more}"><span x-show="!more">Show More</span><span x-show="more">Show Less</span></a>
             </div>
-        </div>
-    </div>
-
-    <div class="fixed top-0 left-0 w-screen bg-black z-50 flex justify-center items-center transition-all duration-1000 overflow-hidden" :class="{'h-0': !more, 'h-screen': more}">
-        <a x-on:click="more = false" class="text-white text-2xl cursor-pointer absolute right-10 top-10"><i class="fa-solid fa-x"></i></a>
-        <div class="md:w-[600px] w-full px-10 text-white">
-        Kami dengan bangga menyambut Anda di halaman website resmi sekolah kami. SMKN 1 Bantul adalah tempat
-                    di
-                    mana semangat belajar dan karakter berkembang bersama. Kami berkomitmen untuk memberikan pendidikan
-                    yang
-                    berkualitas, mempersiapkan siswa-siswa kami menjadi individu yang cerdas, istimewa, dan
-                    berintegritas.
-                    <br><br>
-                    Cerdas: Di SMKN 1 Bantul, kami mengutamakan pembelajaran yang inovatif dan relevan dengan
-                    perkembangan
-                    zaman. Kami percaya bahwa pengetahuan dan keterampilan yang diperoleh di sekolah akan membuka pintu
-                    kesempatan di masa depan.
-                    <br><br>
-                    Istimewa: Setiap siswa di sini adalah individu istimewa. Kami menghargai keberagaman, bakat, dan
-                    minat
-                    yang dimiliki oleh setiap siswa. Bersama-sama, kita menciptakan lingkungan yang inklusif dan penuh
-                    semangat.
-                    <br><br>
-                    Berkarakter: Karakter adalah pondasi dari segala prestasi. Di SMKN 1 Bantul, kami mengajarkan
-                    nilai-nilai seperti integritas, tanggung jawab, dan kerjasama. Kami ingin siswa kami tidak hanya
-                    pandai
-                    dalam akademik, tetapi juga memiliki kepribadian yang kuat.
-                    <br><br>
-                    Terima kasih telah mengunjungi website kami. Mari bersama-sama menjadikan SMKN 1 Bantul sebagai
-                    tempat
-                    yang inspiratif dan penuh semangat. Selamat mengeksplorasi informasi yang ada di sini!
         </div>
     </div>
 </div>
