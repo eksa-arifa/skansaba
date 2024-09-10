@@ -6,7 +6,7 @@
 <x-carousel.index/>
 
 
-<div class="w-screen py-16" x-data="{more: false}">
+<div class="w-screen py-16 overflow-x-hidden" x-data="{more: false}">
     <div class="flex flex-col md:flex-row justify-center gap-10">
         <img data-aos="fade-right" width="350" class="max-h-[350px] h-[350px]" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/1.png" alt="kepala sekolah">
         <div class="md:w-[600px] w-full px-10" data-aos="fade-left">
@@ -49,7 +49,7 @@
     </div>
 </div>
 
-<div class="w-screen py-16 px-10 md:px-36">
+<div class="w-screen py-16 px-10 md:px-36 overflow-hidden">
     <div class="w-full">
         <h1 class="text-3xl underline decoration-blue-600" data-aos="fade-right">Berita Terbaru</h1>
         <div class="flex flex-col md:flex-row gap-4">
@@ -72,7 +72,7 @@
     </div>
 </div>
 
-<div class="w-screen py-4 bg-blue-600 text-white">
+<div class="w-screen py-4 bg-blue-600 text-white overflow-hidden">
     <div class="relative w-full overflow-hidden">
         <div class="scroll-container flex justify-center py-8">
             <!-- First set of images -->
@@ -137,7 +137,7 @@
 
 
 
-<div class="w-screen py-16 px-10 md:px-36">
+<div class="w-screen py-16 px-10 md:px-36 overflow-hidden">
 
 <h1 class="text-center text-3xl underline decoration-blue-600">Media</h1>
 
