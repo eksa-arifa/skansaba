@@ -44,7 +44,7 @@
                     tempat
                     yang inspiratif dan penuh semangat. Selamat mengeksplorasi informasi yang ada di sini!
                 </p>
-                <a x-on:click="more = !more" class="py-3 px-9 cursor-pointer bg-blue-600 text-white rounded-full absolute left-1/2 translate-x-[-50%] hover:bg-blue-700" :class="{'bottom-0': !more, 'bottom-[-40px]': more}"><span x-show="!more">Show More</span><span x-show="more">Show Less</span></a>
+                <a x-on:click="more = !more" class="py-3 px-9 cursor-pointer text-nowrap bg-blue-600 text-white rounded-full absolute left-1/2 translate-x-[-50%] hover:bg-blue-700" :class="{'bottom-0': !more, 'bottom-[-40px]': more}"><span x-show="!more">Show More</span><span x-show="more">Show Less</span></a>
             </div>
         </div>
     </div>
