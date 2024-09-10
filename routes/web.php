@@ -1,5 +1,16 @@
 <?php
 
+use App\Livewire\Berita;
+use App\Livewire\DenahLokasi;
+use App\Livewire\Download;
+use App\Livewire\Ekstrakurikuler;
+use App\Livewire\Gallery;
+use App\Livewire\OrganisasiSiswa;
+use App\Livewire\ProgramKeahlian;
+use App\Livewire\SaranaPrasarana;
+use App\Livewire\Sejarah;
+use App\Livewire\StrukturOrganisasi;
+use App\Livewire\VisiMisi;
 use App\Livewire\Welcome;
 use Illuminate\Support\Facades\Route;
 
@@ -15,3 +26,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', Welcome::class)->name('home');
+
+Route::get('/sejarah', Sejarah::class)->name('sejarah');
+
+Route::get('/visi-misi', VisiMisi::class)->name('visi-misi');
+
+Route::get('/struktur-organisasi', StrukturOrganisasi::class)->name('struktur-organisasi');
+Route::get('/denah-lokasi', DenahLokasi::class)->name('denah-lokasi');
+Route::get('/sarana-prasarana', SaranaPrasarana::class)->name('sarana-prasarana');
+Route::get('/download', Download::class)->name('download');
+Route::get('/berita', Berita::class)->name('berita');
+Route::get('/gallery', Gallery::class)->name('gallery');
+Route::get('/program-keahlian/{slug}', ProgramKeahlian::class)->name('program-keahlian');
+Route::get('/ekstrakurikuler', Ekstrakurikuler::class)->name('ekstrakurikuler');
+Route::get('/organisasi-siswa', OrganisasiSiswa::class)->name('organisasi-siswa');

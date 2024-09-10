@@ -22,33 +22,33 @@
                 <x-slot:title>
                     Profil Sekolah
                 </x-slot:title>
-                <x-nav.linkdropdown href="">Sejarah</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="">Visi & Misi</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="">Struktur Organisasi</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="">Denah Lokasi</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="">Sarana Prasarana</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="/sejarah">Sejarah</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="/visi-misi">Visi & Misi</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="/struktur-organisasi">Struktur Organisasi</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="/denah-lokasi">Denah Lokasi</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="/sarana-prasarana">Sarana Prasarana</x-nav.linkdropdown>
             </x-nav.dropdown>
             <x-nav.dropdown>
                 <x-slot:title>
                     Fitur
                 </x-slot:title>
-                <x-nav.linkdropdown href="">Download</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="">Berita dan informasi</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="">Gallery foto</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="">Gallery video</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="/download">Download</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="/berita">Berita dan informasi</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="/gallery">Gallery foto</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="/gallery">Gallery video</x-nav.linkdropdown>
             </x-nav.dropdown>
             <x-nav.dropdown>
                 <x-slot:title>
                     Program Keahlian
                 </x-slot:title>
-                <x-nav.linkdropdown href="">Akuntansi</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="">Layanan Perbankan Syariah(LPS)</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="">Manajemen Perkantoran(MP)</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="">Bisnis Retail(BR)</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="">Bisnis Digital(BD)</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="">Desain Komunikasi Visual(DKV)</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="">Rekayasa Perangkat Lunak(RPL)</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="">Teknik Komputer Dan Jaringan(TKJ)</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="/program-keahlian/akuntansi">Akuntansi</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="/program-keahlian/layanan-perbankan-syariah">Layanan Perbankan Syariah(LPS)</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="/program-keahlian/manajemen-perkantoran">Manajemen Perkantoran(MP)</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="/program-keahlian/bisnis-retail">Bisnis Retail(BR)</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="/program-keahlian/bisnis-digital">Bisnis Digital(BD)</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="/program-keahlian/desain-komunikasi-visual">Desain Komunikasi Visual(DKV)</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="/program-keahlian/rekayasa-perangkat-lunak">Rekayasa Perangkat Lunak(RPL)</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="/program-keahlian/teknik-komputer-dan-jaringan">Teknik Komputer Dan Jaringan(TKJ)</x-nav.linkdropdown>
             </x-nav.dropdown>
             <x-nav.dropdown>
                 <x-slot:title>
@@ -60,8 +60,8 @@
                 <x-slot:title>
                     Lainnya
                 </x-slot:title>
-                <x-nav.linkdropdown href="">Ekstrakurikuler</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="">Organisasi Siswa</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="/ekstrakurikuler">Ekstrakurikuler</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="/organisasi-siswa">Organisasi Siswa</x-nav.linkdropdown>
             </x-nav.dropdown>
         </ul>
         <a x-on:click="active = !active" class="md:hidden" 
