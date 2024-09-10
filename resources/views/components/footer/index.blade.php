@@ -32,7 +32,7 @@
             <div style="text-decoration:none; overflow:hidden;max-width:100%;width:300px;height:300px;"><div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/search?q=smkn+1+bantul&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="our-googlemap-code" href="https://www.bootstrapskins.com/themes" id="make-map-data">premium bootstrap themes</a><style>#embed-map-canvas img{max-height:none;max-width:none!important;background:none!important;}</style></div>
         </div>
     </div>
-    <div class="py-2 text-gray-400 px-10 md:px-36 bg-blue-700">
+    <div class="py-4 text-gray-400 px-10 md:px-36 bg-blue-700">
         <span>Copyright © SMKN 1 Bantul</span>
     </div>
 </footer>
