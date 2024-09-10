@@ -1,8 +1,9 @@
-@extends('layouts.app')
-
-@section('content')
 
 
+
+
+
+<div>
 <x-carousel.index/>
 
 
@@ -190,21 +191,7 @@
 <a href="" class="py-3 px-9 mx-auto cursor-pointer bg-blue-600 text-white rounded-full hover:bg-blue-700 w-fit block">Show More</a>
 
 </div>
-
-@endsection
-
+</div>
 
 
-@section('script')
-<script>
-    AOS.init({
-        duration: 1000
-    })
-</script>
 
-<script>
-  new Glide('.glide', {
-    autoplay: 3000
-  }).mount()
-</script>
-@endsection

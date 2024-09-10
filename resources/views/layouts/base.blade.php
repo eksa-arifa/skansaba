@@ -60,7 +60,17 @@
 
     @yield('script')
 
+    <script>
+        AOS.init({
+            duration: 1000
+        })
+    </script>
 
+    <script>
+        new Glide('.glide', {
+            autoplay: 3000
+        }).mount()
+    </script>
 
 
 </body>
