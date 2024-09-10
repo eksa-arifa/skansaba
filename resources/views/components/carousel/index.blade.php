@@ -2,16 +2,16 @@
     <div class="glide">
         <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
-                <x-carousel.slide src="https://skansaba.dev/images/slider_2.JPG">
+                <x-carousel.slide src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Front_view_of_SMKN_1_Bantul.jpg">
                     <h1 class="md:text-4xl text-3xl text-white text-center">SELAMAT DATANG DI SMKN 1 BANTUL</h1>
                 </x-carousel.slide>
-                <x-carousel.slide src="https://skansaba.dev/images/slider_2.JPG">
+                <x-carousel.slide src="/assets/images/1.jpeg">
                     <h1 class="md:text-4xl text-3xl text-white text-center">CENTER OF EXCELLENCE SCHOOL</h1>
                 </x-carousel.slide>
-                <x-carousel.slide src="https://skansaba.dev/images/slider_2.JPG">
+                <x-carousel.slide src="/assets/images/2.jpeg">
                     <h1 class="md:text-4xl text-3xl text-white text-center">SEKOLAH PUSAT KEUNGGULAN</h1>
                 </x-carousel.slide>
-                <x-carousel.slide src="https://skansaba.dev/images/slider_2.JPG">
+                <x-carousel.slide src="/assets/images/3.jpeg">
                     <h1 class="md:text-4xl text-3xl text-white text-center">SMK BISA</h1>
                 </x-carousel.slide>
                 <x-carousel.slide src="https://skansaba.dev/images/slider_2.JPG">
