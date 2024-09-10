@@ -7,7 +7,7 @@
 
 
 <div class="w-screen py-16 overflow-x-hidden" x-data="{more: false}">
-    <div class="flex flex-col md:flex-row justify-center gap-10">
+    <div class="flex flex-col md:flex-row justify-center gap-10 overflow-hidden">
         <img data-aos="fade-right" width="350" class="max-h-[350px] h-[350px]" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/1.png" alt="kepala sekolah">
         <div class="md:w-[600px] w-full px-10" data-aos="fade-left">
             <div class="border-b-2 border-blue-600">
@@ -50,9 +50,9 @@
 </div>
 
 <div class="w-screen py-16 px-10 md:px-36 overflow-hidden">
-    <div class="w-full">
+    <div class="w-full overflow-hidden">
         <h1 class="text-3xl underline decoration-blue-600" data-aos="fade-right">Berita Terbaru</h1>
-        <div class="flex flex-col md:flex-row gap-4">
+        <div class="flex flex-col md:flex-row gap-4 overflow-hidden">
             <div class="w-full md:w-1/2 h-[470px] shadow-lg my-5 rounded-lg overflow-hidden" data-aos="zoom-in-right">
                 <img class="w-full h-[350px] object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/img_0137.jpg?resize=1500,1500&strip=info" alt="news">
                 <a class="p-4 block cursor-pointer hover:text-blue-600 w-full whitespace-nowrap overflow-hidden text-ellipsis text-lg">Siswa SMKN 1 Bantul tersenyum lebar bersama teman temannya hahaha lucu yaa</a>
@@ -74,7 +74,7 @@
 
 <div class="w-screen py-4 bg-blue-600 text-white overflow-hidden">
     <div class="relative w-full overflow-hidden">
-        <div class="scroll-container flex justify-center py-8">
+        <div class="scroll-container flex justify-center py-8 overflow-hidden">
             <!-- First set of images -->
             <div class="w-[350px] md:w-[225px]">
                 <img class="w-full h-[350px] md:h-[250px] object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/3-1.jpg" alt="konsentrasi keahlian">
@@ -141,7 +141,7 @@
 
 <h1 class="text-center text-3xl underline decoration-blue-600">Media</h1>
 
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4 py-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 py-8 overflow-hidden">
     <div class="grid gap-4">
         <div data-aos="fade-up">
             <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/img_0137.jpg?resize=1500,2000&strip=info" alt="">
