@@ -17,7 +17,7 @@
             </div>
             <div class="w-full relative">
                 <p
-                    class="w-full relative overflow-hidden py-3 after:w-full after:absolute after:bottom-0 after:left-0 after:h-36 after:from-white after:to-transparent" :class="{'h-[280px]': !more, 'h-fit': more, 'after:bg-transparent': more, 'after:bg-gradient-to-t': !more}">
+                    class="w-full relative overflow-hidden py-3 after:w-full after:absolute after:bottom-0 after:left-0 after:h-36 after:from-white after:to-transparent" :class="{'h-[280px]': !more, 'h-[670px]': more, 'after:bg-transparent': more, 'after:bg-gradient-to-t': !more}">
                     Kami dengan bangga menyambut Anda di halaman website resmi sekolah kami. SMKN 1 Bantul adalah tempat
                     di
                     mana semangat belajar dan karakter berkembang bersama. Kami berkomitmen untuk memberikan pendidikan
@@ -44,7 +44,7 @@
                     tempat
                     yang inspiratif dan penuh semangat. Selamat mengeksplorasi informasi yang ada di sini!
                 </p>
-                <a x-on:click="more = !more" class="py-3 px-9 cursor-pointer text-nowrap bg-blue-600 text-white rounded-full absolute left-1/2 translate-x-[-50%] hover:bg-blue-700" :class="{'bottom-0': !more, 'bottom-[-40px]': more}"><span x-show="!more">Show More</span><span x-show="more">Show Less</span></a>
+                <a x-on:click="more = !more" class="py-3 px-9 cursor-pointer text-nowrap bg-blue-600 text-white rounded-full absolute left-1/2 translate-x-[-50%] hover:bg-blue-700 bottom-0"><span x-show="!more">Show More</span><span x-show="more">Show Less</span></a>
             </div>
         </div>
     </div>

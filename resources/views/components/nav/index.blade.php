@@ -27,10 +27,11 @@
                 <x-nav.linkdropdown href="/struktur-organisasi">Struktur Organisasi</x-nav.linkdropdown>
                 <x-nav.linkdropdown href="/denah-lokasi">Denah Lokasi</x-nav.linkdropdown>
                 <x-nav.linkdropdown href="/sarana-prasarana">Sarana Prasarana</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="/teaching-factory">Teaching Factory</x-nav.linkdropdown>
             </x-nav.dropdown>
             <x-nav.dropdown>
                 <x-slot:title>
-                    Fitur
+                    Informasi
                 </x-slot:title>
                 <x-nav.linkdropdown href="/download">Download</x-nav.linkdropdown>
                 <x-nav.linkdropdown href="/berita">Berita dan informasi</x-nav.linkdropdown>
@@ -52,16 +53,11 @@
             </x-nav.dropdown>
             <x-nav.dropdown>
                 <x-slot:title>
-                    PPDB
-                </x-slot:title>
-                <x-nav.linkdropdown href="">PPDB 2024</x-nav.linkdropdown>
-            </x-nav.dropdown>
-            <x-nav.dropdown>
-                <x-slot:title>
                     Lainnya
                 </x-slot:title>
                 <x-nav.linkdropdown href="/ekstrakurikuler">Ekstrakurikuler</x-nav.linkdropdown>
                 <x-nav.linkdropdown href="/organisasi-siswa">Organisasi Siswa</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="">PPDB 2024</x-nav.linkdropdown>
             </x-nav.dropdown>
         </ul>
         <a x-on:click="active = !active" class="md:hidden" 
