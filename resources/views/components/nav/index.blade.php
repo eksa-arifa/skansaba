@@ -17,7 +17,7 @@
         </a>
         <ul class="flex gap-2 fixed left-0 top-0 flex-col bg-white md:bg-transparent h-screen md:h-fit md:overflow-visible md:w-fit shadow-lg py-4 md:flex-row md:static md:shadow-none md:gap-6 overflow-hidden transition-all" 
             :class="{'w-[80%]': active, 'w-0': !active}">
-            <x-nav.link href="">Beranda</x-nav.link>
+            <x-nav.link href="/">Beranda</x-nav.link>
             <x-nav.dropdown>
                 <x-slot:title>
                     Profil Sekolah

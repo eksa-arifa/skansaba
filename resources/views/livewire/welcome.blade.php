@@ -77,45 +77,47 @@
     <div class="relative w-full">
         <div class="flex justify-center py-8 flex-wrap gap-2">
             <!-- First set of images -->
-            <div class="w-full sm:w-[225px] md:w-[180px] h-[360px] md:h-[220px] p-4 bg-white rounded-md shadow-md">
-                <img class="w-full h-[280px] md:h-fit object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/3-1.jpg" alt="konsentrasi keahlian">
-                <h2 class="text-xs mt-2 font-bold text-black text-center">Akuntansi</h2>
-            </div>
-            <div class="w-full sm:w-[225px] md:w-[180px] h-[360px] md:h-[220px] p-4 bg-white rounded-md shadow-md">
-                <img class="w-full h-[280px] md:h-fit object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/4.jpg" alt="konsentrasi keahlian">
-                <h2 class="text-xs mt-2 font-bold text-black text-center">Layanan Perbankan Syariah</h2>
-            </div>
-            <div class="w-full sm:w-[225px] md:w-[180px] h-[360px] md:h-[220px] p-4 bg-white rounded-md shadow-md">
-                <img class="w-full h-[280px] md:h-fit object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/5.jpg" alt="konsentrasi keahlian">
-                <h2 class="text-xs mt-2 font-bold text-black text-center">Manajemen Perkantoran</h2>
-            </div>
-            <div class="w-full sm:w-[225px] md:w-[180px] h-[360px] md:h-[220px] p-4 bg-white rounded-md shadow-md">
-                <img class="w-full h-[280px] md:h-fit object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/6.jpg" alt="konsentrasi keahlian">
-                <h2 class="text-xs mt-2 font-bold text-black text-center">Bisnis Ritel</h2>
-            </div>
-            <div class="w-full sm:w-[225px] md:w-[180px] h-[360px] md:h-[220px] p-4 bg-white rounded-md shadow-md">
-                <img class="w-full h-[280px] md:h-fit object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/7.jpg" alt="konsentrasi keahlian">
-                <h2 class="text-xs mt-2 font-bold text-black text-center">Bisnis Digital</h2>
-            </div>
-            <div class="w-full sm:w-[225px] md:w-[180px] h-[360px] md:h-[220px] p-4 bg-white rounded-md shadow-md">
-                <img class="w-full h-[280px] md:h-fit object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/8.jpg" alt="konsentrasi keahlian">
-                <h2 class="text-xs mt-2 font-bold text-black text-center">Desain Komunikasi Visual</h2>
-            </div>
-            <div class="w-full sm:w-[225px] md:w-[180px] h-[360px] md:h-[220px] p-4 bg-white rounded-md shadow-md">
-                <img class="w-full h-[280px] md:h-fit object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/9.jpg" alt="konsentrasi keahlian">
-                <h2 class="text-xs mt-2 font-bold text-black text-center">Rekayasa Perangkat Lunak</h2>
-            </div>
-            <div class="w-full sm:w-[225px] md:w-[180px] h-[360px] md:h-[220px] p-4 bg-white rounded-md shadow-md">
-                <img class="w-full h-[280px] md:h-fit object-cover" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/10.jpg" alt="konsentrasi keahlian">
-                <h2 class="text-xs mt-2 font-bold text-black text-center">Teknik Komputer Dan Jaringan</h2>
-            </div>
+            <x-card.index>
+                <x-card.image src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/3-1.jpg"/>
+                <x-card.title>Akuntansi</x-card.title>
+            </x-card.index>
+            <x-card.index>
+                <x-card.image src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/4.jpg"/>
+                <x-card.title>Layanan Perbankan Syariah</x-card.title>
+            </x-card.index>
+            <x-card.index>
+                <x-card.image src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/5.jpg"/>
+                <x-card.title>Manajemen Perkantoran</x-card.title>
+            </x-card.index>
+            <x-card.index>
+                <x-card.image src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/6.jpg"/>
+                <x-card.title>Bisnis Ritel</x-card.title>
+            </x-card.index>
+            <x-card.index>
+                <x-card.image src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/7.jpg"/>
+                <x-card.title>Bisnis Digital</x-card.title>
+            </x-card.index>
+            <x-card.index>
+                <x-card.image src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/8.jpg"/>
+                <x-card.title>Desain Komunikasi Visual</x-card.title>
+            </x-card.index>
+            <x-card.index>
+                <x-card.image src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/9.jpg"/>
+                <x-card.title>Rekayasa Perangkat Lunak</x-card.title>
+            </x-card.index>
+            <x-card.index>
+                <x-card.image src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/10.jpg"/>
+                <x-card.title>Teknik Komputer Dan Jaringan</x-card.title>
+            </x-card.index>
         </div>
     </div>
 </div>
 
 
 
-
+<div class="w-screen py-16 px-10 md:px-36 overflow-hidden">
+    
+</div>
 
 
 
