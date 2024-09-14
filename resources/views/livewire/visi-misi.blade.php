@@ -2,7 +2,7 @@
     <x-header.index>
         Visi & Misi
     </x-header.index>
-    <div class="w-screen min-h-screen p-10 flex flex-col gap-6">
+    <div class="w-screen min-h-screen p-6 flex flex-col gap-6">
         <div class="w-full p-4 shadow-md border-gray-400 border-2">
             <h1 class="font-bold text-2xl">Visi</h1>
             <p class="py-3 px-3">

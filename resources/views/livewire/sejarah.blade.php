@@ -2,7 +2,7 @@
     <x-header.index>
         Sejarah
     </x-header.index>
-    <div class="w-screen min-h-screen p-10">
+    <div class="w-screen min-h-screen p-6">
         <div class="p-4 border-gray-400 border-2 flex flex-col gap-5 shadow-md">
             <h1 class="font-bold text-xl">Sejarah SMKN 1 Bantul</h1>
             <p class="">
