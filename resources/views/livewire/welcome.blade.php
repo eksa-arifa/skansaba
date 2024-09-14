@@ -116,7 +116,7 @@
 
 
 <div class="w-screen py-16 px-10 md:px-36 overflow-hidden">
-    
+    <h1 class="text-center text-3xl underline decoration-blue-600">Sponsorship</h1>
 </div>
 
 
