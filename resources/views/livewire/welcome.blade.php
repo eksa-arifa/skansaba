@@ -118,29 +118,29 @@
 <div class="w-screen py-16 px-10 md:px-36 overflow-hidden">
     <h1 class="text-center text-3xl underline decoration-blue-600">Sponsorship</h1>
     <div class="flex flex-wrap gap-3 w-full justify-center items-center py-8">
-        <img src="/assets/images/akademikom.png" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/ambarukmo.png" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/ameya.png" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/amikom.png" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/ampta.jpg" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/duta.png" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/gmedia.jpg" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/janabadra.png" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/mirota.png" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/msd.png" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/profidana.png" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/pt_time_excelindo_logo.jpeg" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/sejong.jpg" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/semar.jpg" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/seven.png" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/stikom.jpeg" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/uad.png" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/mercubuana.png" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/unjani.png" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/ust.png" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/ut.png" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/utdi.png" class="w-[60px] object-cover" alt="logo">
-        <img src="/assets/images/uty.png" class="w-[60px] object-cover" alt="logo">
+        <x-sponsorImage.index src="/assets/images/akademikom.png"/>
+        <x-sponsorImage.index src="/assets/images/ambarukmo.png"/>
+        <x-sponsorImage.index src="/assets/images/ameya.png"/>
+        <x-sponsorImage.index src="/assets/images/amikom.png"/>
+        <x-sponsorImage.index src="/assets/images/ampta.jpg"/>
+        <x-sponsorImage.index src="/assets/images/duta.png"/>
+        <x-sponsorImage.index src="/assets/images/gmedia.jpg"/>
+        <x-sponsorImage.index src="/assets/images/janabadra.png"/>
+        <x-sponsorImage.index src="/assets/images/mirota.png"/>
+        <x-sponsorImage.index src="/assets/images/msd.png"/>
+        <x-sponsorImage.index src="/assets/images/profidana.png"/>
+        <x-sponsorImage.index src="/assets/images/pt_time_excelindo_logo.jpeg"/>
+        <x-sponsorImage.index src="/assets/images/sejong.jpg"/>
+        <x-sponsorImage.index src="/assets/images/semar.jpg"/>
+        <x-sponsorImage.index src="/assets/images/seven.png"/>
+        <x-sponsorImage.index src="/assets/images/stikom.jpeg"/>
+        <x-sponsorImage.index src="/assets/images/uad.png"/>
+        <x-sponsorImage.index src="/assets/images/mercubuana.png"/>
+        <x-sponsorImage.index src="/assets/images/unjani.png"/>
+        <x-sponsorImage.index src="/assets/images/ust.png"/>
+        <x-sponsorImage.index src="/assets/images/ut.png"/>
+        <x-sponsorImage.index src="/assets/images/utdi.png"/>
+        <x-sponsorImage.index src="/assets/images/uty.png"/>
     </div>
 </div>
 
