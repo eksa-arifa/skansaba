@@ -1,1 +1,1 @@
-<img src="{{$src}}" class="w-[60px] object-cover" alt="logo" data-aos="fade-up">
+<img src="{{$src}}" class="w-[80px] object-cover" alt="logo" data-aos="fade-up">
