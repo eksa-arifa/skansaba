@@ -17,7 +17,7 @@ class BeritaFactory extends Factory
     public function definition(): array
     {
         return [
-            "title" => fake()->title(),
+            "title" => fake()->text(),
             "content" => fake()->paragraph(),
             "slug" => fake()->slug(),
         ];

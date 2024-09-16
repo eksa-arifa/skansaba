@@ -14,7 +14,7 @@ class Berita extends Component
         try{
             $berita = \App\Models\Berita::latest()->paginate(6);
 
-            return view('livewire.berita', ['berita'=>$berita])->layout('layouts.app');
+            return view('livewire.berita.index', ['berita'=>$berita])->layout('layouts.app');
         }catch(\Exception $e){
             abort(500, $e->getMessage());
         }
