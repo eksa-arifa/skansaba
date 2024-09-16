@@ -3,11 +3,20 @@
 namespace App\Livewire;
 
 use Livewire\Component;
+use Livewire\WithPagination;
 
 class Berita extends Component
 {
+    use WithPagination;
+
     public function render()
     {
-        return view('livewire.berita')->layout('layouts.app');
+        try{
+            $berita = \App\Models\Berita::latest()->paginate(6);
+
+            return view('livewire.berita', ['berita'=>$berita])->layout('layouts.app');
+        }catch(\Exception $e){
+            abort(500, $e->getMessage());
+        }
     }
 }
