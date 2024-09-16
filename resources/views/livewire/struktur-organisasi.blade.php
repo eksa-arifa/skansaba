@@ -1,3 +1,6 @@
+@section('title')
+Struktur Organisasi
+@endsection
 <div>
     <x-header.index>
         Struktur Organisasi

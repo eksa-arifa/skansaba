@@ -1,3 +1,6 @@
+@section('title')
+    Berita
+@endsection
 <div>
     <x-header.index>
         Berita & Informasi

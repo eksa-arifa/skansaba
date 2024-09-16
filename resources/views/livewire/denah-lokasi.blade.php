@@ -1,3 +1,6 @@
+@section('title')
+Denah Lokasi
+@endsection
 <div>
     <x-header.index>
         Denah Lokasi

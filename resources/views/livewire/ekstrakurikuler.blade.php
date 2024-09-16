@@ -1,3 +1,6 @@
+@section('title')
+Ekstrakurikuler
+@endsection
 <div>
     <x-header.index>
         Ekstrakurikuler

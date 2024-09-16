@@ -1,3 +1,6 @@
+@section('title')
+ Download
+@endsection
 <div>
     <x-header.index>
         Download

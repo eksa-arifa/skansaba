@@ -1,3 +1,6 @@
+@section('title')
+Program Keahlian
+@endsection
 <div>
     <x-header.index>
         Program Keahlian

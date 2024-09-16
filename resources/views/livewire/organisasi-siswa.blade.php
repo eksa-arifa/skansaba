@@ -1,3 +1,6 @@
+@section('title')
+Organisasi Siswa
+@endsection
 <div>
     <x-header.index>
         Organisasi Siswa

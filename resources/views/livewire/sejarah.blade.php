@@ -1,3 +1,6 @@
+@section('title')
+Sejarah
+@endsection
 <div>
     <x-header.index>
         Sejarah

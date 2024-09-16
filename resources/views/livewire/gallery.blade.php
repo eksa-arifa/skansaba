@@ -1,3 +1,6 @@
+@section('title')
+Gallery
+@endsection
 <div>
     <x-header.index>
         Gallery

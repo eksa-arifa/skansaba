@@ -1,3 +1,6 @@
+@section('title')
+Visi - Misi
+@endsection
 <div>
     <x-header.index>
         Visi & Misi
@@ -18,11 +21,11 @@
                 </li>
                 <li>Melaksanakan pembelajaran yang berbasis sains dan teknologi</li>
                 <li>Mengimplementasikan iman, takwa dan nilai-nilai karakter bangsa dalam
-                kehidupan sehari-hari</li>
+                    kehidupan sehari-hari</li>
                 <li>Melaksanakan pembelajaran berbasis lingkungan serta
-                mengaplikasikannya dalam kehidupan sehari-hari</li>
+                    mengaplikasikannya dalam kehidupan sehari-hari</li>
                 <li>Menyiapkan tamatan yang mampu mengisi dan menciptakan lapangan
-                kerja serta mengembangkan profesionalitas di bidang bisnis.</li>
+                    kerja serta mengembangkan profesionalitas di bidang bisnis.</li>
             </ul>
         </div>
     </div>
