@@ -116,7 +116,7 @@
 
 
 <div class="w-screen py-16 px-10 md:px-36 overflow-hidden">
-    <h1 class="text-center text-3xl underline decoration-blue-600">Sponsorship</h1>
+    <h1 class="text-center text-3xl underline decoration-blue-600">Networking</h1>
     <div class="flex flex-wrap gap-3 w-full justify-center items-center py-8">
         <x-sponsorImage.index src="/assets/images/akademikom.png"/>
         <x-sponsorImage.index src="/assets/images/ambarukmo.png"/>
