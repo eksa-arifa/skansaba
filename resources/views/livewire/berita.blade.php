@@ -6,13 +6,13 @@ Berita
         Berita & Informasi
     </x-header.index>
     <div class="w-screen min-h-screen py-10 px-10 md:px-36">
-        <div class="flex flex-wrap gap-5">
+        <div class="flex flex-wrap justify-center gap-5">
 
             @forelse ($berita as $item)
 
 
                 <div
-                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    class="w-full md:w-[300px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <img class="rounded-t-lg"
                             src="{{$item->attachment->path}}"
