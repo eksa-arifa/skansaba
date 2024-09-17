@@ -66,7 +66,7 @@
                     <li class="w-full border-b-2 py-3 flex flex-col"><a class="hover:text-blue-500 text-xl w-full text-ellipsis text-nowrap overflow-hidden" href="{{route('berita.detail', ["slug"=>$item->slug])}}">{{$item->title}}</a><p class="text-gray-500">{{$item->created_at->diffForHumans()}} By SMKN 1 BANTUL</p></li>
                     @endforeach
                 </ul>
-                <a href="" class="py-3 px-9 cursor-pointer bg-blue-600 text-white rounded-full hover:bg-blue-700 w-fit block">Show More</a>
+                <a href="{{route('berita.index')}}" class="py-3 px-9 cursor-pointer bg-blue-600 text-white rounded-full hover:bg-blue-700 w-fit block">Show More</a>
             </div>
         </div>
     </div>
