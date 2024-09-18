@@ -150,53 +150,20 @@
 
 <h1 class="text-center text-3xl underline decoration-blue-600">Media</h1>
 
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4 py-8 overflow-hidden">
-    <div class="grid gap-4">
-        <div data-aos="fade-up">
-            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/img_0137.jpg?resize=1500,2000&strip=info" alt="">
-        </div>
-        <div data-aos="fade-up">
-            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/img_9885.jpg?resize=1500,1250&strip=info" alt="">
-        </div>
-        <div data-aos="fade-up">
-            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/img_0684.jpg?resize=1500,1250&strip=info" alt="">
-        </div>
-    </div>
-    <div class="grid gap-4">
-        <div data-aos="fade-up">
-            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/img_9487.jpg?resize=1500,1250&strip=info" alt="">
-        </div>
-        <div data-aos="fade-up">
-            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/sny01713.jpg?resize=1500,2000&strip=info" alt="">
-        </div>
-        <div data-aos="fade-up">
-            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/img_9696.jpg?resize=1500,1250&strip=info" alt="">
-        </div>
-    </div>
-    <div class="grid gap-4">
-        <div data-aos="fade-up">
-            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/07/img_9834.jpg?resize=1500,1250&strip=info" alt="">
-        </div>
-        <div data-aos="fade-up">
-            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/sny01713.jpg?resize=1500,1250&strip=info" alt="">
-        </div>
-        <div data-aos="fade-up">
-            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/sny01713.jpg?resize=1500,2000&strip=info" alt="">
-        </div>
-    </div>
-    <div class="grid gap-4">
-        <div data-aos="fade-up">
-            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/img_9885.jpg?resize=1500,1250&strip=info" alt="">
-        </div>
-        <div data-aos="fade-up">
-            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/img_9885.jpg?resize=1500,2000&strip=info" alt="">
-        </div>
-        <div data-aos="fade-up">
-            <img class="h-auto max-w-full rounded-lg" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/img_9885.jpg?resize=1500,1250&strip=info" alt="">
-        </div>
-    </div>
+<div class="flex gap-4 py-10 justify-center items-center flex-wrap">
+    <x-media-card.index href="" logo="youtube">
+        YouTube
+    </x-media-card.index>
+    <x-media-card.index href="" logo="instagram">
+        Instagram
+    </x-media-card.index>
+    <x-media-card.index href="" logo="facebook">
+        Facebook
+    </x-media-card.index>
+    <x-media-card.index href="" logo="tiktok">
+        TikTok
+    </x-media-card.index>
 </div>
-<a href="" class="py-3 px-9 mx-auto cursor-pointer bg-blue-600 text-white rounded-full hover:bg-blue-700 w-fit block">Show More</a>
 
 </div>
 </div>
