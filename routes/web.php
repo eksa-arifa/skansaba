@@ -37,7 +37,6 @@ Route::get('/struktur-organisasi', StrukturOrganisasi::class)->name('struktur-or
 Route::get('/denah-lokasi', DenahLokasi::class)->name('denah-lokasi');
 Route::get('/sarana-prasarana', SaranaPrasarana::class)->name('sarana-prasarana');
 Route::get('/download', Download::class)->name('download');
-Route::get('/gallery', Gallery::class)->name('gallery');
 Route::get('/program-keahlian/{slug}', ProgramKeahlian::class)->name('program-keahlian');
 Route::get('/ekstrakurikuler', Ekstrakurikuler::class)->name('ekstrakurikuler');
 Route::get('/organisasi-siswa', OrganisasiSiswa::class)->name('organisasi-siswa');

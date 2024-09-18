@@ -35,8 +35,6 @@
                 </x-slot:title>
                 <x-nav.linkdropdown href="/download">Download</x-nav.linkdropdown>
                 <x-nav.linkdropdown href="/berita">Berita dan informasi</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="/gallery">Gallery foto</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="/gallery">Gallery video</x-nav.linkdropdown>
             </x-nav.dropdown>
             <x-nav.dropdown>
                 <x-slot:title>
