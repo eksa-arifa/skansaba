@@ -151,17 +151,14 @@
 <h1 class="text-center text-3xl underline decoration-blue-600">Media</h1>
 
 <div class="flex gap-4 py-10 justify-center items-center flex-wrap">
-    <x-media-card.index href="" logo="youtube">
+    <x-media-card.index href="https://www.youtube.com/@officialsmkn1bantul" logo="youtube">
         YouTube
     </x-media-card.index>
-    <x-media-card.index href="" logo="instagram">
+    <x-media-card.index href="https://instagram.com/smkn1bantul" logo="instagram">
         Instagram
     </x-media-card.index>
-    <x-media-card.index href="" logo="facebook">
-        Facebook
-    </x-media-card.index>
-    <x-media-card.index href="" logo="tiktok">
-        TikTok
+    <x-media-card.index href="https://x.com/skansaba_id" logo="twitter">
+        Twitter
     </x-media-card.index>
 </div>
 

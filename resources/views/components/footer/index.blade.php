@@ -6,22 +6,19 @@
                 Daerah Istimewa Yogyakarta 55715 </p>
             <span>Telfon: +62 274 367 156</span>
             <div class="flex gap-3">
-                <a href=""
+                <a href="https://www.youtube.com/@officialsmkn1bantul"
                     class="w-[35px] h-[35px] text-xl border rounded-full flex justify-center items-center hover:text-blue-500 hover:border-blue-500 hover:bg-white">
                     <i class="fa-brands fa-youtube"></i>
                 </a>
-                <a href=""
+                <a href="https://instagram.com/smkn1bantul"
                     class="w-[35px] h-[35px] text-xl border rounded-full flex justify-center items-center hover:text-blue-500 hover:border-blue-500 hover:bg-white">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
-                <a href=""
+                <a href="https://x.com/skansaba_id"
                     class="w-[35px] h-[35px] text-xl border rounded-full flex justify-center items-center hover:text-blue-500 hover:border-blue-500 hover:bg-white">
-                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
                 </a>
-                <a href=""
-                    class="w-[35px] h-[35px] text-xl border rounded-full flex justify-center items-center hover:text-blue-500 hover:border-blue-500 hover:bg-white">
-                    <i class="fa-brands fa-tiktok"></i>
-                </a>
+                
 
             </div>
         </div>
