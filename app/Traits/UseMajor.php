@@ -22,9 +22,12 @@ trait UseMajor
     {
         try{
             $major = Major::where("slug", $slug)->first();
+            if(! $major){
+                throw new \Exception("", 404);
+            }
             return $major;
         }catch(\Exception $e){
-            abort(404, $e->getMessage());
+            abort($e->getCode() ?? 500, $e->getMessage());
         }
     }
 }
