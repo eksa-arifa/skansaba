@@ -3,10 +3,13 @@
 namespace App\Livewire;
 
 use App\Models\Berita;
+use App\Traits\UseMajor;
 use Livewire\Component;
 
 class BeritaDetail extends Component
 {
+
+    use UseMajor;
 
     public $slug;
 
@@ -22,7 +25,7 @@ class BeritaDetail extends Component
                 throw new \Exception("Not Found", 404);
             }
 
-            return view('livewire.berita.berita-detail', ["berita" => $berita])->layout('layouts.app');
+            return view('livewire.berita.berita-detail', ["berita" => $berita])->layout('layouts.app', ['majors'=>$this->majors]);
         }catch(\Exception $e){
             abort($e->getCode() ?? 500, $e->getMessage());
         }

@@ -53,6 +53,7 @@
 <div class="w-screen py-16 px-10 md:px-36 overflow-hidden">
     <div class="w-full overflow-hidden">
         <h1 class="text-3xl underline decoration-blue-600" data-aos="fade-right">Berita Terbaru</h1>
+        @if($berita != "")
         <div class="flex flex-col md:flex-row gap-4 overflow-hidden">
             <div class="w-full md:w-1/2 h-[470px] shadow-lg my-5 rounded-lg overflow-hidden" data-aos="zoom-in-right">
                 <img class="w-full h-[350px] object-cover" src="{{$berita->attachment->path}}" alt="news">
@@ -62,13 +63,29 @@
             <div class="flex w-full md:w-1/2 flex-col gap-3 my-5" data-aos="zoom-in-left">
                 <h2 class="text-2xl underline decoration-blue-600">Berita lainnya</h2>
                 <ul class="w-full p-4">
-                    @foreach($beritas as $item)
+                    
+                    @forelse($beritas as $item)
                     <li class="w-full border-b-2 py-3 flex flex-col"><a class="hover:text-blue-500 text-xl w-full text-ellipsis text-nowrap overflow-hidden" href="{{route('berita.detail', ["slug"=>$item->slug])}}">{{$item->title}}</a><p class="text-gray-500">{{$item->created_at->diffForHumans()}} By SMKN 1 BANTUL</p></li>
-                    @endforeach
+                    @empty
+                    <div class="w-full flex justify-center items-center h-[300px]">
+                        <span>Berita lainnya tidak ditemukan</span>
+                    </div>
+                    @endforelse
                 </ul>
+                @if(!$beritas->isEmpty())
                 <a href="{{route('berita.index')}}" class="py-3 px-9 cursor-pointer bg-blue-600 text-white rounded-full hover:bg-blue-700 w-fit block">Show More</a>
+                @endif
             </div>
         </div>
+
+        @else
+
+        <div class="w-full flex justify-center items-center h-[400px]">
+            <span>Berita Tidak Ditemukan</span>
+        </div>
+
+
+        @endif
     </div>
 </div>
 
@@ -76,38 +93,13 @@
     <div class="relative w-full">
         <div class="flex justify-center py-8 flex-wrap gap-2">
             <!-- First set of images -->
+             @foreach($majors as $item)
             <x-card.index>
-                <x-card.image src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/3-1.jpg"/>
-                <x-card.title>Akuntansi</x-card.title>
+                <x-card.image src="{{$item->image ?? ''}}"/>
+                <x-card.title>{{$item->name}}</x-card.title>
             </x-card.index>
-            <x-card.index>
-                <x-card.image src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/4.jpg"/>
-                <x-card.title>Layanan Perbankan Syariah</x-card.title>
-            </x-card.index>
-            <x-card.index>
-                <x-card.image src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/5.jpg"/>
-                <x-card.title>Manajemen Perkantoran</x-card.title>
-            </x-card.index>
-            <x-card.index>
-                <x-card.image src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/6.jpg"/>
-                <x-card.title>Bisnis Ritel</x-card.title>
-            </x-card.index>
-            <x-card.index>
-                <x-card.image src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/7.jpg"/>
-                <x-card.title>Bisnis Digital</x-card.title>
-            </x-card.index>
-            <x-card.index>
-                <x-card.image src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/8.jpg"/>
-                <x-card.title>Desain Komunikasi Visual</x-card.title>
-            </x-card.index>
-            <x-card.index>
-                <x-card.image src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/9.jpg"/>
-                <x-card.title>Rekayasa Perangkat Lunak</x-card.title>
-            </x-card.index>
-            <x-card.index>
-                <x-card.image src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/10.jpg"/>
-                <x-card.title>Teknik Komputer Dan Jaringan</x-card.title>
-            </x-card.index>
+
+            @endforeach
         </div>
     </div>
 </div>

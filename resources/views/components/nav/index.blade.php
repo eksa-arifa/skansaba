@@ -40,14 +40,9 @@
                 <x-slot:title>
                     Program Keahlian
                 </x-slot:title>
-                <x-nav.linkdropdown href="/program-keahlian/akuntansi">Akuntansi</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="/program-keahlian/layanan-perbankan-syariah">Layanan Perbankan Syariah(LPS)</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="/program-keahlian/manajemen-perkantoran">Manajemen Perkantoran(MP)</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="/program-keahlian/bisnis-retail">Bisnis Retail(BR)</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="/program-keahlian/bisnis-digital">Bisnis Digital(BD)</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="/program-keahlian/desain-komunikasi-visual">Desain Komunikasi Visual(DKV)</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="/program-keahlian/rekayasa-perangkat-lunak">Rekayasa Perangkat Lunak(RPL)</x-nav.linkdropdown>
-                <x-nav.linkdropdown href="/program-keahlian/teknik-komputer-dan-jaringan">Teknik Komputer Dan Jaringan(TKJ)</x-nav.linkdropdown>
+                @foreach($majors as $item)
+                <x-nav.linkdropdown href="{{route('program-keahlian', ['slug'=>$item->slug])}}">{{$item->name}}</x-nav.linkdropdown>
+                @endforeach
             </x-nav.dropdown>
             <x-nav.dropdown>
                 <x-slot:title>

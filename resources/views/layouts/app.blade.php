@@ -1,7 +1,7 @@
 @extends('layouts.base')
 
 @section('body')
-    <x-nav.index />
+    <x-nav.index :majors="$majors" />
     @yield('content')
     
     @isset($slot)
