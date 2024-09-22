@@ -5,9 +5,9 @@ Program Keahlian
     <x-header.index>
         Program Keahlian
     </x-header.index>
-    <div class="w-screen min-h-screen p-10">
+    <div class="w-screen min-h-screen p-8">
         <div class="flex flex-wrap items-center justify-center gap-6 w-full p-5 border-gray-500 border-2">
-            <img class="w-[350px] h-[400px] " src="{{$major->image ?? ''}}" alt="Jurusan">
+            <img class="w-[350px] h-[400px] object-cover" src="{{$major->image ?? ''}}" alt="Jurusan">
             <div class="flex flex-col gap-5 h-[400px] w-[350px]">
                 <h1 class="uppercase text-xl font-bold border-b-2 border-gray-400">Program Keahlian {{$major->name}}</h1>
                 <p>
