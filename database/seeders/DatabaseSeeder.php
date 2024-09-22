@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Berita;
 use App\Models\Attachment;
+use App\Models\Infrastructure;
 use App\Models\Major;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -32,7 +33,7 @@ class DatabaseSeeder extends Seeder
         Major::factory()->create([
             "name" => "Akuntansi",
             "image" => "https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/3-1.jpg",
-            "description" => "lorem ipsum dolor sit amet consecterur adipsicing husto guarge turrunt koaladigho",
+            "description" => "lorem ipsum dolor sit amet consecterur adipsicing husto guarge turrunt koaladigho jsoajsas sajosjaos ajsoajsoa sasoajsoajs sjaojsoajsoa soasjoajsojas aosjao soj o o so aj soajsoaj soa soa soajsoa soa soa",
             "slug" => "akuntansi"
         ]);
         Major::factory()->create([
@@ -50,7 +51,7 @@ class DatabaseSeeder extends Seeder
         Major::factory()->create([
             "name" => "Bisnis Ritel",
             "image" => "https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/6.jpg",
-            "description" => "lorem ipsum dolor sit amet consecterur adipsicing husto guarge turrunt koaladigho",
+            "description" => "lorem ipsum dolor sit amet consecterur adipsicing husto guarge turrunt koaladigho jsoajsas sajosjaos ajsoajsoa sasoajsoajs sjaojsoajsoa soasjoajsojas aosjao soj o o so aj soajsoaj soa soa soajsoa soa soa",
             "slug" => "bisnis-ritel"
         ]);
         Major::factory()->create([
@@ -68,15 +69,15 @@ class DatabaseSeeder extends Seeder
         Major::factory()->create([
             "name" => "Rekayasa Perangkat Lunak",
             "image" => "https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/9.jpg",
-            "description" => "lorem ipsum dolor sit amet consecterur adipsicing husto guarge turrunt koaladigho",
+            "description" => "lorem ipsum dolor sit amet consecterur adipsicing husto guarge turrunt koaladigho jsoajsas sajosjaos ajsoajsoa sasoajsoajs sjaojsoajsoa soasjoajsojas aosjao soj o o so aj soajsoaj soa soa soajsoa soa soa",
             "slug" => "rekayasa-perangkat-lunak"
         ]);
         Major::factory()->create([
             "name" => "Teknik Komputer Dan Jaringan",
             "image" => "https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/10.jpg",
-            "description" => "lorem ipsum dolor sit amet consecterur adipsicing husto guarge turrunt koaladigho",
+            "description" => "lorem ipsum dolor sit amet consecterur adipsicing husto guarge turrunt koaladigho jsoajsas sajosjaos ajsoajsoa sasoajsoajs sjaojsoajsoa soasjoajsojas aosjao soj o o so aj soajsoaj soa soa soajsoa soa soa",
             "slug" => "teknik-komputer-dan-jaringan"
         ]);
-        
+    
     }
 }
