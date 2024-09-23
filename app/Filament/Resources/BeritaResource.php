@@ -59,6 +59,7 @@ class BeritaResource extends Resource
                 TextInput::make('slug')
                     ->required(),
                 RichEditor::make('content')
+                    ->columnSpan(2)->extraInputAttributes(['style' => 'min-height: 300px'])
                     ->toolbarButtons([
                         'blockquote',
                         'bold',
