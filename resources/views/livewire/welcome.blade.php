@@ -56,7 +56,7 @@
         @if($berita != "")
         <div class="flex flex-col md:flex-row gap-4 overflow-hidden">
             <div class="w-full md:w-1/2 h-[470px] shadow-lg my-5 rounded-lg overflow-hidden" data-aos="zoom-in-right">
-                <img class="w-full h-[350px] object-cover" src="{{$berita->attachment->path}}" alt="news">
+                <img class="w-full h-[350px] object-cover" src="/storage/{{$berita->attachment->path}}" alt="news">
                 <a class="p-4 block cursor-pointer hover:text-blue-600 w-full whitespace-nowrap overflow-hidden text-ellipsis text-lg" href="{{route('berita.detail', ["slug"=>$berita->slug])}}">{{$berita->title}}</a>
                 <p class="text-gray-500 px-4">{{$berita->created_at->diffForHumans()}} By SMKN 1 BANTUL</p>
             </div>

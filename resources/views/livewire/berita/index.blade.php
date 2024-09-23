@@ -15,16 +15,13 @@ Berita
                     class="w-full md:w-[300px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="{{route('berita.detail', ["slug"=>$item->slug])}}">
                         <img class="rounded-t-lg"
-                            src="{{$item->attachment->path}}"
+                            src="/storage/{{$item->attachment->path ?? ''}}"
                             alt="berita" />
                     </a>
                     <div class="p-5 flex flex-col">
                         <a href="{{route('berita.detail', ["slug"=>$item->slug])}}">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white whitespace-nowrap overflow-hidden text-ellipsis">{{$item->title}}</h5>
                         </a>
-                        <p
-                            class="mb-3 font-normal text-gray-700 dark:text-gray-400 overflow-hidden text-ellipsis whitespace-nowrap">
-                            {{$item->content}}</p>
 
                         <span class="mt-6 text-gray-600">{{$item->created_at->diffForHumans()}}</span>
                     </div>
