@@ -8,6 +8,7 @@ use App\Filament\Resources\BeritaResource\RelationManagers\AttachmentsRelationMa
 use App\Models\Berita;
 use Filament\Forms;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Group;
 use Filament\Forms\Components\MarkdownEditor;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TextInput;
@@ -29,13 +30,6 @@ class BeritaResource extends Resource
     protected static ?string $model = Berita::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-
-    public static function getRelations(): array
-    {
-        return [
-            AttachmentsRelationManager::class,
-        ];
-    }
 
     public static function form(Form $form): Form
     {
@@ -76,7 +70,10 @@ class BeritaResource extends Resource
                         'underline',
                         'undo',
                     ]),
-
+                
+                Group::make()->relationship('attachment')->schema([
+                    FileUpload::make('path')
+                ])
             ]);
     }
 
