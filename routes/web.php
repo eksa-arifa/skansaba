@@ -1,5 +1,7 @@
 <?php
 
+use App\Livewire\Admin\Auth\Login;
+use App\Livewire\Admin\Dashboard;
 use App\Livewire\Berita;
 use App\Livewire\BeritaDetail;
 use App\Livewire\DenahLokasi;
@@ -46,4 +48,16 @@ Route::get('/teaching-factory', TeachingFactory::class)->name('teaching-factory'
 Route::prefix('berita')->group(function(){
     Route::get('/', Berita::class)->name('berita.index');
     Route::get('/{slug}', BeritaDetail::class)->name('berita.detail');
+});
+
+
+
+
+Route::prefix('admin')->group(function(){
+    Route::middleware('auth')->group(function(){
+        Route::get('/', Dashboard::class)->name('admin.dashboard');
+    });
+    Route::middleware('no-auth')->group(function(){
+        Route::get('/login', Login::class)->name('login');
+    });
 });
