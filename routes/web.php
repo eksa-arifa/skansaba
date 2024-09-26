@@ -57,11 +57,10 @@ Route::prefix('berita')->group(function(){
 Route::prefix('admin')->group(function(){
     Route::middleware('auth')->group(function(){
         Route::get('/', Dashboard::class)->name('admin.dashboard');
+        Route::post('logout', [LogoutController::class,'logout'])->name('logout');
     });
     Route::middleware('no-auth')->group(function(){
         Route::get('/login', Login::class)->name('login');
     });
 });
 
-
-Route::post('logout', [LogoutController::class,'logout'])->name('logout');
