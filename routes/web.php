@@ -3,6 +3,7 @@
 use App\Http\Controllers\LogoutController;
 use App\Livewire\Admin\Auth\Login;
 use App\Livewire\Admin\Dashboard;
+use App\Livewire\Admin\Settings;
 use App\Livewire\Berita;
 use App\Livewire\BeritaDetail;
 use App\Livewire\DenahLokasi;
@@ -57,7 +58,6 @@ Route::prefix('berita')->group(function(){
 Route::prefix('admin')->group(function(){
     Route::middleware('auth')->group(function(){
         Route::get('/', Dashboard::class)->name('admin.dashboard');
-        Route::post('logout', [LogoutController::class,'logout'])->name('logout');
     });
     Route::middleware('no-auth')->group(function(){
         Route::get('/login', Login::class)->name('login');
