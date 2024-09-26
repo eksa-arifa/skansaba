@@ -58,6 +58,9 @@ Route::prefix('berita')->group(function(){
 Route::prefix('admin')->group(function(){
     Route::middleware('auth')->group(function(){
         Route::get('/', Dashboard::class)->name('admin.dashboard');
+
+
+        Route::get('/settings', Settings::class)->name('admin.settings');
     });
     Route::middleware('no-auth')->group(function(){
         Route::get('/login', Login::class)->name('login');

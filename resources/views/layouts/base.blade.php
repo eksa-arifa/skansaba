@@ -74,6 +74,12 @@
                 className: "info",
                 gravity: 'bottom'
             }).showToast();
+        @elseif(Session::has('error'))
+            Toastify({
+                text: "{{Session::get('error')}}",
+                className: "info",
+                gravity: 'bottom'
+            }).showToast();
         @endif
     </script>
 
