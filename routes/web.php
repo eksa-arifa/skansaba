@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\LogoutController;
 use App\Livewire\Admin\Auth\Login;
+use App\Livewire\Admin\CRUD\Berita\BeritaCreate;
+use App\Livewire\Admin\CRUD\Berita\BeritaShow;
 use App\Livewire\Admin\Dashboard;
 use App\Livewire\Admin\Settings;
 use App\Livewire\Berita;
@@ -58,9 +60,12 @@ Route::prefix('berita')->group(function(){
 Route::prefix('admin')->group(function(){
     Route::middleware('auth')->group(function(){
         Route::get('/', Dashboard::class)->name('admin.dashboard');
-
-
         Route::get('/settings', Settings::class)->name('admin.settings');
+
+        Route::prefix('berita')->group(function(){
+            Route::get('/', BeritaShow::class)->name('admin.berita');
+            Route::get('/create', BeritaCreate::class)->name('admin.berita.create');
+        });
     });
     Route::middleware('no-auth')->group(function(){
         Route::get('/login', Login::class)->name('login');

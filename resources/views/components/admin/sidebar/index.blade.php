@@ -31,12 +31,17 @@
                 <x-admin.sidebar.item icon="fa-solid fa-chart-area" href="{{route('admin.dashboard')}}">
                     Dashboard
                 </x-admin.sidebar.item>
+                <x-admin.sidebar.item icon="fa-solid fa-newspaper" href="{{route('admin.berita')}}">
+                    Berita
+                </x-admin.sidebar.item>
+                
             </x-admin.sidebar.group>
+
         </div>
     </div>
 
     <div
-        class="fixed top-0 left-0 w-screen h-[70px] flex bg-blue-600">
+        class="fixed top-0 z-40 left-0 w-screen h-[70px] flex bg-blue-600">
         <div class="space transition-all" :class="{'w-[70px]': !isActiveNavbar, 'w-[225px]': isActiveNavbar}"></div>
         <div class="flex justify-between items-center px-5">
             <a href="#" class="text-white absolute z-50" id="bars" x-on:click="isActiveNavbar = !isActiveNavbar">

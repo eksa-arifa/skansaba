@@ -1,5 +1,5 @@
 <div class="w-fit shadow-md bg-slate-700 rounded-lg p-4 text-white">
-    <div class="w-[400px]">
+    <div class="w-full sm:w-[400px]">
         <h2 class="text-lg font-bold">Change Password</h2>
         <form wire:submit.prevent="submit" class="flex flex-col gap-4">
             <div class="py-1">
