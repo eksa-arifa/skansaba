@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LogoutController;
 use App\Livewire\Admin\Auth\Login;
 use App\Livewire\Admin\Dashboard;
 use App\Livewire\Berita;
@@ -61,3 +62,6 @@ Route::prefix('admin')->group(function(){
         Route::get('/login', Login::class)->name('login');
     });
 });
+
+
+Route::post('logout', [LogoutController::class,'logout'])->name('logout');
