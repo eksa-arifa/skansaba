@@ -15,15 +15,5 @@ Program Keahlian
                 </p>
             </div>
         </div>
-        <div class="w-full mt-6">
-            <h1 class="uppercase text-xl font-bold">Materi Yang Diajarkan</h1>
-            <div class="w-full mt-3 flex flex-wrap gap-2">
-                @forelse($major->lessons as $item)
-                <div class="p-4 bg-gray-400 text-white">{{$item->name}}</div>
-                @empty
-                <div>Materi Kosong</div>
-                @endforelse
-            </div>
-        </div>
     </div>
 </div>

@@ -18,6 +18,10 @@
                     class="w-[35px] h-[35px] text-xl border rounded-full flex justify-center items-center hover:text-blue-500 hover:border-blue-500 hover:bg-white">
                     <i class="fa-brands fa-twitter"></i>
                 </a>
+                <a href="https://tiktok.com/@skansaba.id"
+                    class="w-[35px] h-[35px] text-xl border rounded-full flex justify-center items-center hover:text-blue-500 hover:border-blue-500 hover:bg-white">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
                 
 
             </div>

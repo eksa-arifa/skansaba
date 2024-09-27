@@ -13,12 +13,7 @@ class SaranaPrasarana extends Component
 
     public function render()
     {
-        try{
-            $infrastructures = Infrastructure::orderBy('id', 'desc')->paginate(10);
+            return view('livewire.sarana-prasarana')->layout('layouts.app', ['majors'=>$this->majors]);
 
-            return view('livewire.sarana-prasarana', ["infrastructures"=>$infrastructures])->layout('layouts.app', ['majors'=>$this->majors]);
-        }catch(\Exception $e){
-            abort(500, $e->getMessage());
-        }
     }
 }

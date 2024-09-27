@@ -1,20 +1,21 @@
 @section('title')
-Visi - Misi
+Visi & Misi
 @endsection
 <div>
     <x-header.index>
         Visi & Misi
     </x-header.index>
     <div class="w-screen min-h-screen p-6 flex flex-col gap-6">
-        <div class="w-full p-4 shadow-md border-gray-400 border-2">
+        <div class="w-full p-4 ">
+             <h1 class="font-bold text-4xl text-center text-gray-900 ">Visi & Misi</h1>
             <h1 class="font-bold text-2xl">Visi</h1>
-            <p class="py-3 px-3">
+            <p class="text-xl py-3 px-3">
                 Terwujudnya sekolah berkualitas, berkarakter dan berwawasan lingkungan
             </p>
         </div>
-        <div class="w-full p-4 shadow-md border-2 border-gray-400">
+        <div class="w-full p-4 ">
             <h1 class="font-bold text-2xl">Misi</h1>
-            <ul class="list-decimal gap-5 flex flex-col pl-8 py-3">
+            <ul class="text-xl list-decimal gap-5 flex flex-col pl-8 py-3">
                 <li>
                     Menyiapkan sarana prasarana dan SDM yang memenuhi SNP (Standar
                     Nasional Pendidikan)
