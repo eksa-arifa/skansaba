@@ -5,6 +5,9 @@ use App\Livewire\Admin\Auth\Login;
 use App\Livewire\Admin\CRUD\Berita\BeritaCreate;
 use App\Livewire\Admin\CRUD\Berita\BeritaEdit;
 use App\Livewire\Admin\CRUD\Berita\BeritaShow;
+use App\Livewire\Admin\CRUD\Major\MajorCreate;
+use App\Livewire\Admin\CRUD\Major\MajorEdit;
+use App\Livewire\Admin\CRUD\Major\MajorShow;
 use App\Livewire\Admin\Dashboard;
 use App\Livewire\Admin\Settings;
 use App\Livewire\Berita;
@@ -68,6 +71,13 @@ Route::prefix('admin')->group(function(){
             Route::get('/create', BeritaCreate::class)->name('admin.berita.create');
             Route::get('/edit/{id}', BeritaEdit::class)->name('admin.berita.edit');
         });
+
+        Route::prefix('major')->group(function(){
+            Route::get('/', MajorShow::class)->name('admin.major');
+            Route::get('/create', MajorCreate::class)->name('admin.major.create');
+            Route::get('/edit/{id}', MajorEdit::class)->name('admin.major.edit');
+        });
+        
     });
     Route::middleware('no-auth')->group(function(){
         Route::get('/login', Login::class)->name('login');

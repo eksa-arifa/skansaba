@@ -41,7 +41,7 @@
                     Program Keahlian
                 </x-slot:title>
                 @foreach($majors as $item)
-                <x-nav.linkdropdown href="{{route('program-keahlian', ['slug'=>$item->slug])}}">{{$item->name}}</x-nav.linkdropdown>
+                <x-nav.linkdropdown href="{{route('program-keahlian', ['slug'=>$item->slug])}}">{{$item->title}}</x-nav.linkdropdown>
                 @endforeach
             </x-nav.dropdown>
             <x-nav.dropdown>

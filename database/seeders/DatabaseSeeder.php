@@ -32,49 +32,49 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         Major::factory()->create([
-            "name" => "Akuntansi",
+            "title" => "Akuntansi",
             "image" => "https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/3-1.jpg",
             "description" => "lorem ipsum dolor sit amet consecterur adipsicing husto guarge turrunt koaladigho jsoajsas sajosjaos ajsoajsoa sasoajsoajs sjaojsoajsoa soasjoajsojas aosjao soj o o so aj soajsoaj soa soa soajsoa soa soa",
             "slug" => "akuntansi"
         ]);
         Major::factory()->create([
-            "name" => "Layanan Perbankan Syariah",
+            "title" => "Layanan Perbankan Syariah",
             "image" => "https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/4.jpg",
             "description" => "lorem ipsum dolor sit amet consecterur adipsicing husto guarge turrunt koaladigho",
             "slug" => "layanan-perbankan-syariah"
         ]);
         Major::factory()->create([
-            "name" => "Manajemen Perkantoran",
+            "title" => "Manajemen Perkantoran",
             "image" => "https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/5.jpg",
             "description" => "lorem ipsum dolor sit amet consecterur adipsicing husto guarge turrunt koaladigho",
             "slug" => "manajemen-perkantoran"
         ]);
         Major::factory()->create([
-            "name" => "Bisnis Ritel",
+            "title" => "Bisnis Ritel",
             "image" => "https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/6.jpg",
             "description" => "lorem ipsum dolor sit amet consecterur adipsicing husto guarge turrunt koaladigho jsoajsas sajosjaos ajsoajsoa sasoajsoajs sjaojsoajsoa soasjoajsojas aosjao soj o o so aj soajsoaj soa soa soajsoa soa soa",
             "slug" => "bisnis-ritel"
         ]);
         Major::factory()->create([
-            "name" => "Bisnis Digital",
+            "title" => "Bisnis Digital",
             "image" => "https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/7.jpg",
             "description" => "lorem ipsum dolor sit amet consecterur adipsicing husto guarge turrunt koaladigho",
             "slug" => "bisnis-digital"
         ]);
         Major::factory()->create([
-            "name" => "Desain Komunikasi Visual",
+            "title" => "Desain Komunikasi Visual",
             "image" => "https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/8.jpg",
             "description" => "lorem ipsum dolor sit amet consecterur adipsicing husto guarge turrunt koaladigho",
             "slug" => "desain-komunikasi-visual"
         ]);
         Major::factory()->create([
-            "name" => "Rekayasa Perangkat Lunak",
+            "title" => "Rekayasa Perangkat Lunak",
             "image" => "https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/9.jpg",
             "description" => "lorem ipsum dolor sit amet consecterur adipsicing husto guarge turrunt koaladigho jsoajsas sajosjaos ajsoajsoa sasoajsoajs sjaojsoajsoa soasjoajsojas aosjao soj o o so aj soajsoaj soa soa soajsoa soa soa",
             "slug" => "rekayasa-perangkat-lunak"
         ]);
         Major::factory()->create([
-            "name" => "Teknik Komputer Dan Jaringan",
+            "title" => "Teknik Komputer Dan Jaringan",
             "image" => "https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/10.jpg",
             "description" => "lorem ipsum dolor sit amet consecterur adipsicing husto guarge turrunt koaladigho jsoajsas sajosjaos ajsoajsoa sasoajsoajs sjaojsoajsoa soasjoajsojas aosjao soj o o so aj soajsoaj soa soa soajsoa soa soa",
             "slug" => "teknik-komputer-dan-jaringan"

@@ -34,6 +34,9 @@
                 <x-admin.sidebar.item icon="fa-solid fa-newspaper" href="{{route('admin.berita')}}">
                     Berita
                 </x-admin.sidebar.item>
+                <x-admin.sidebar.item icon="fa-solid fa-handshake" href="{{route('admin.major')}}">
+                    Major
+                </x-admin.sidebar.item>
                 
             </x-admin.sidebar.group>
 
@@ -68,7 +71,7 @@
 
     </div>
 
-    <section class="mt-[70px] pt-[25px] px-[30px] transition-all min-h-screen" :class="{'sm:ml-[70px]': !isActiveNavbar, 'sm:ml-[225px]': isActiveNavbar}">
+    <section class="mt-[70px] py-[25px] px-[30px] transition-all min-h-screen" :class="{'sm:ml-[70px]': !isActiveNavbar, 'sm:ml-[225px]': isActiveNavbar}">
         @isset($slot)
             {{ $slot }}
         @endisset

@@ -17,7 +17,7 @@ class MajorFactory extends Factory
     public function definition(): array
     {
         return [
-            "name" => $this->faker->word(),
+            "title" => $this->faker->word(),
             "image" => $this->faker->imageUrl(),
             "description" => $this->faker->text(),
             "slug" => $this->faker->slug(),

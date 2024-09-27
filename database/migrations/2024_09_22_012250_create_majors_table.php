@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('majors', function (Blueprint $table) {
             $table->id();
             $table->string('image');
-            $table->string('name');
+            $table->string('title');
             $table->text('description');
             $table->string('slug')->unique();
             $table->timestamps();

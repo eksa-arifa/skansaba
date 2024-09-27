@@ -96,7 +96,7 @@
              @foreach($majors as $item)
             <x-card.index>
                 <x-card.image src="{{$item->image ?? ''}}"/>
-                <x-card.title>{{$item->name}}</x-card.title>
+                <x-card.title>{{$item->title}}</x-card.title>
             </x-card.index>
 
             @endforeach
