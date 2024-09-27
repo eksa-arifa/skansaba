@@ -8,9 +8,9 @@
                 <span>Uploaded {{$berita->created_at->diffForHumans()}}</span>
                 <span>By SMKN 1 BANTUL</span>
             </div>
-            <p>
-                {{$berita->content}}
-            </p>
+            <livewire:berita.berita-content>
+                {!!$berita->content!!}
+            </livewire:berita.berita-content>
         </div>
     </div>
 </div>

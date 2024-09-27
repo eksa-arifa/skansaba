@@ -2,21 +2,23 @@
 
 namespace App\Livewire\Admin\CRUD\Berita;
 
+use App\Models\Attachment;
 use App\Models\Berita;
 use Livewire\Component;
-use Livewire\WithPagination;
+use Livewire\WithFileUploads;
 
 class BeritaCreate extends Component
 {
+    use WithFileUploads;
 
     public $title;
     public $content;
-
-    
+    public $image;
 
     protected $rules = [
         "title" => "required|max:50",
-        "content" => "required"
+        "content" => "required",
+        "image" => "required|image|max:5000"
     ];
 
     public function submit(){
@@ -28,6 +30,18 @@ class BeritaCreate extends Component
             ]);
 
             if(!$create){
+                throw new \Exception();
+            }
+
+            $path = $this->image->store("images", "public");
+
+            $attachmentUpload = Attachment::create([
+                "berita_id" => $create->id,
+                "path" => env("APP_URL").'/storage/'.$path
+            ]);
+
+            if(! $attachmentUpload){
+                Berita::destroy($create->id);    
                 throw new \Exception();
             }
 

@@ -1,12 +1,12 @@
 <div>
     <div class="mb-4">
-        <h1 class="text-xl font-bold uppercase underline decoration-blue-600">Berita Baru</h1>
+        <h1 class="text-xl font-bold uppercase underline decoration-blue-600">Berita Edit</h1>
     </div>
     <div class="">
 
-        <form wire:submit="submit" class="flex flex-col gap-4">
+        <form wire:submit="edit" class="flex flex-col gap-4">
             <div class="max-w-sm">
-                <div x-data="{ imagePreview: '' }" class="">
+                <div x-data="{ imagePreview: '{{$berita->attachment->path}}' }" class="">
                     <!-- Input untuk Upload Gambar -->
                     <input type="file" class="hidden" wire:model="image" x-ref="image" @change="
             const file = $refs.image.files[0];
@@ -56,13 +56,13 @@
                 @error('title') {{$message}} @enderror
             </div>
             <div wire:ignore>
-                <textarea wire:model="content" id="summernote" required></textarea>
+                <textarea wire:model="content" id="summernote" required>{{$berita->content}}</textarea>
             </div>
             @error('content') {{$message}} @enderror
 
 
 
-            <button type="submit" class="w-fit px-4 py-2 bg-blue-600 text-white rounded-lg">Submit</button>
+            <button type="submit" class="w-fit px-4 py-2 bg-blue-600 text-white rounded-lg">Edit</button>
         </form>
 
     </div>

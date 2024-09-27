@@ -40,9 +40,6 @@
                             Title
                         </th>
                         <th scope="col" class="px-6 py-3">
-                            Content
-                        </th>
-                        <th scope="col" class="px-6 py-3">
                             Image
                         </th>
                         <th scope="col" class="px-6 py-3">
@@ -52,33 +49,30 @@
                 </thead>
                 <tbody>
                     @forelse($berita as $item)
-                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            {{$loop->index + 1 }}
-                        </th>
-                        <td class="px-6 py-4">
-                            {{$item->title}}
-                        </td>
-                        <td class="px-6 py-4">
-                            {{$item->content}}
-                        </td>
-                        <td class="px-6 py-4">
-                            Gambar
-                        </td>
-                        <td class="px-6 py-4 flex items-center gap-2">
-                            <a href="#" class="font-medium text-white bg-yellow-400 p-2 rounded-md">
-                                <i class="fa-solid fa-pencil"></i>
-                            </a>
-                            <a href="#" class="font-medium text-white bg-red-600 p-2 rounded-md">
-                                <i class="fa-solid fa-trash"></i>
-                            </a>
-                        </td>
-                    </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                {{$loop->index + 1 }}
+                            </th>
+                            <td class="px-6 py-4">
+                                {{$item->title}}
+                            </td>
+                            <td class="px-6 py-4">
+                                <img src="{{$item->attachment->path}}" alt="Image" width="100">
+                            </td>
+                            <td class="px-6 py-4 flex items-center gap-2">
+                                <a href="{{route('admin.berita.edit', ["id"=>$item->id])}}" class="block text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </a>
+                                <livewire:admin.c-r-u-d.berita.berita-delete :id="$item->id" />
+                            </td>
+                        </tr>
                     @empty
 
-                    <tr colspan="5">
-                        table is empty
-                    </tr>
+                        <tr>
+                            <td colspan="5" class="text-center py-4">
+                                Table is empty
+                            </td>
+                        </tr>
 
                     @endforelse
                 </tbody>
