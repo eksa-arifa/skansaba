@@ -14,7 +14,7 @@
                                         @php
                                             $l = $loop->index;
                                         @endphp
-                                        <span class="text-sm">>></span>
+                                        <i class="fa-solid fa-chevron-right mr-2"></i>
                                         @php
                                         $url = ""
                                         @endphp
