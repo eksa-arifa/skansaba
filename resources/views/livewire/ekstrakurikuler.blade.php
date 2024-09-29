@@ -151,9 +151,90 @@ Ekstrakurikuler
                                     1
                                 </th>
                                 <td class="px-6 py-4">
+                                    Pramuka
+                                </td>
+                            </tr>
+                            <tr
+                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row"
+                                    class="px-6 py-4 w-[50px] font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    2
+                                </th>
+                                <td class="px-6 py-4">
+                                    KKR
+                                </td>
+                            </tr>
+                            <tr
+                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row"
+                                    class="px-6 py-4 w-[50px] font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    3
+                                </th>
+                                <td class="px-6 py-4">
+                                    Qiro'ah
+                                </td>
+                            </tr>
+                            <tr
+                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row"
+                                    class="px-6 py-4 w-[50px] font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    4
+                                </th>
+                                <td class="px-6 py-4">
+                                    Hadroh
+                                </td>
+                            </tr>
+                            <tr
+                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row"
+                                    class="px-6 py-4 w-[50px] font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    5
+                                </th>
+                                <td class="px-6 py-4">
+                                    Pencak Silat
+                                </td>
+                            </tr>
+                            <tr
+                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row"
+                                    class="px-6 py-4 w-[50px] font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    6
+                                </th>
+                                <td class="px-6 py-4">
+                                    Robotik
+                                </td>
+                            </tr>
+                            <tr
+                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row"
+                                    class="px-6 py-4 w-[50px] font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    7
+                                </th>
+                                <td class="px-6 py-4">
+                                    Basket
+                                </td>
+                            </tr>
+                            <tr
+                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row"
+                                    class="px-6 py-4 w-[50px] font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    8
+                                </th>
+                                <td class="px-6 py-4">
+                                    Voli
+                                </td>
+                            </tr>
+                            <tr
+                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row"
+                                    class="px-6 py-4 w-[50px] font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    9
+                                </th>
+                                <td class="px-6 py-4">
                                     KIR
                                 </td>
                             </tr>
+                            
                             
                         </tbody>
                     </table>

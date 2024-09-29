@@ -12,10 +12,7 @@
                     <h1 class="md:text-4xl text-3xl text-white text-center">SEKOLAH PUSAT KEUNGGULAN</h1>
                 </x-carousel.slide>
                 <x-carousel.slide src="/assets/images/3.jpeg">
-                    <h1 class="md:text-4xl text-3xl text-white text-center">SMK BISA</h1>
-                </x-carousel.slide>
-                <x-carousel.slide src="https://skansaba.dev/images/slider_2.JPG">
-                    <h1 class="md:text-4xl text-3xl text-white text-center">SMK HEBAT</h1>
+                    <h1 class="md:text-4xl text-3xl text-white text-center">SMK BISA HEBAT</h1>
                 </x-carousel.slide>
             </ul>
         </div>

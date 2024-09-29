@@ -1,1 +1,1 @@
-<img width="35" src="https://skansaba.dev/images/logo%20SMK.png" alt="logo">
+<img width="35" src="/logo.png" alt="logo">
