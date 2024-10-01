@@ -8,7 +8,7 @@
     <div class="bottom-0 bg-blue-600 left-0 absolute w-full max-w-full z-20 uppercase">
         <div class="text-white text-lg flex items-center gap-3 h-full px-8 py-4 bg-blue-800 w-fit max-w-full"><a
                 href="/">Home</a>
-            <h3 class="text-white text-nowrap overflow-hidden text-ellipsis">
+            <h3 class="text-white text-nowrap overflow-hidden text-ellipsis" wire:ignore>
                 @foreach (explode('/', url()->current()) as $item)
                             @if($loop->index > 2)
                                         @php

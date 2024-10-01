@@ -26,7 +26,8 @@ class BeritaCreate extends Component
         try{
             $create = Berita::create([
                 "title"=> $this->title,
-                "content"=> $this->content
+                "content"=> $this->content,
+                "user_id" => auth()->user()->id,
             ]);
 
             if(!$create){

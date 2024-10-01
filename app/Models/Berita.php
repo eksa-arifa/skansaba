@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Traits\Slugable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Berita extends Model
@@ -16,12 +17,17 @@ class Berita extends Model
     protected $fillable = [
         'title',
         'content',
-        'slug'
+        'slug',
+        'user_id'
     ];
 
 
 
     public function attachment(): HasOne{
         return $this->hasOne(Attachment::class);
+    }
+
+    public function user(): BelongsTo{
+        return $this->belongsTo(User::class);
     }
 }

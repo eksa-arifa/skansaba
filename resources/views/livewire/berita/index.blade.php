@@ -22,9 +22,6 @@ Berita
                         <a href="{{route('berita.detail', ["slug"=>$item->slug])}}">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white whitespace-nowrap overflow-hidden text-ellipsis">{{$item->title}}</h5>
                         </a>
-                        <p
-                            class="mb-3 font-normal text-gray-700 dark:text-gray-400 overflow-hidden text-ellipsis whitespace-nowrap">
-                            {{$item->content}}</p>
 
                         <span class="mt-6 text-gray-600">{{$item->created_at->diffForHumans()}}</span>
                     </div>

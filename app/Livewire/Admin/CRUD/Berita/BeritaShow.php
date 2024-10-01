@@ -12,7 +12,7 @@ class BeritaShow extends Component
 
     public function render()
     {
-        $berita = Berita::latest()->paginate(10);
+        $berita = Berita::where('user_id', auth()->user()->id)->latest()->paginate(10);
 
         return view('livewire.admin.c-r-u-d.berita.berita-show', ["berita"=>$berita])->layout('layouts.admin');
     }

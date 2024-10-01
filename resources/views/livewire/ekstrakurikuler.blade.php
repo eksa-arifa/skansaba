@@ -151,7 +151,7 @@ Ekstrakurikuler
                                     1
                                 </th>
                                 <td class="px-6 py-4">
-                                    Pramuka
+                                    Paduan Suara
                                 </td>
                             </tr>
                             <tr
@@ -161,7 +161,7 @@ Ekstrakurikuler
                                     2
                                 </th>
                                 <td class="px-6 py-4">
-                                    KKR
+                                    KIR
                                 </td>
                             </tr>
                             <tr
@@ -171,7 +171,7 @@ Ekstrakurikuler
                                     3
                                 </th>
                                 <td class="px-6 py-4">
-                                    Qiro'ah
+                                    Silat
                                 </td>
                             </tr>
                             <tr
@@ -181,7 +181,7 @@ Ekstrakurikuler
                                     4
                                 </th>
                                 <td class="px-6 py-4">
-                                    Hadroh
+                                    Basket
                                 </td>
                             </tr>
                             <tr
@@ -191,7 +191,7 @@ Ekstrakurikuler
                                     5
                                 </th>
                                 <td class="px-6 py-4">
-                                    Pencak Silat
+                                    Robotik
                                 </td>
                             </tr>
                             <tr
@@ -201,7 +201,7 @@ Ekstrakurikuler
                                     6
                                 </th>
                                 <td class="px-6 py-4">
-                                    Robotik
+                                    Karawitan
                                 </td>
                             </tr>
                             <tr
@@ -211,7 +211,7 @@ Ekstrakurikuler
                                     7
                                 </th>
                                 <td class="px-6 py-4">
-                                    Basket
+                                    PMR
                                 </td>
                             </tr>
                             <tr
@@ -221,7 +221,7 @@ Ekstrakurikuler
                                     8
                                 </th>
                                 <td class="px-6 py-4">
-                                    Voli
+                                    Hadroh
                                 </td>
                             </tr>
                             <tr
@@ -231,11 +231,91 @@ Ekstrakurikuler
                                     9
                                 </th>
                                 <td class="px-6 py-4">
-                                    KIR
+                                    Voli
                                 </td>
                             </tr>
-                            
-                            
+                            <tr
+                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row"
+                                    class="px-6 py-4 w-[50px] font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    10
+                                </th>
+                                <td class="px-6 py-4">
+                                    Qiro'ah
+                                </td>
+                            </tr>
+                            <tr
+                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row"
+                                    class="px-6 py-4 w-[50px] font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    11
+                                </th>
+                                <td class="px-6 py-4">
+                                    Futsal
+                                </td>
+                            </tr>
+                            <tr
+                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row"
+                                    class="px-6 py-4 w-[50px] font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    12
+                                </th>
+                                <td class="px-6 py-4">
+                                    Drumband
+                                </td>
+                            </tr>
+                            <tr
+                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row"
+                                    class="px-6 py-4 w-[50px] font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    13
+                                </th>
+                                <td class="px-6 py-4">
+                                    Menjahit
+                                </td>
+                            </tr>
+                            <tr
+                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row"
+                                    class="px-6 py-4 w-[50px] font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    14
+                                </th>
+                                <td class="px-6 py-4">
+                                    IT Enterpreneur
+                                </td>
+                            </tr>
+                            <tr
+                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row"
+                                    class="px-6 py-4 w-[50px] font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    15
+                                </th>
+                                <td class="px-6 py-4">
+                                    Tari
+                                </td>
+                            </tr>
+                            <tr
+                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row"
+                                    class="px-6 py-4 w-[50px] font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    16
+                                </th>
+                                <td class="px-6 py-4">
+                                    Teater
+                                </td>
+                            </tr>
+                            <tr
+                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row"
+                                    class="px-6 py-4 w-[50px] font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    17
+                                </th>
+                                <td class="px-6 py-4">
+                                    Renang
+                                </td>
+                            </tr>
+
+
                         </tbody>
                     </table>
                 </div>
