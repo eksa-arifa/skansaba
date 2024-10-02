@@ -6,7 +6,7 @@
         <div class="flex flex-col gap-8">
             <div class="font-bold text-gray-600 flex justify-between text-sm">
                 <span>Uploaded {{$berita->created_at->diffForHumans()}}</span>
-                <span>By SMKN 1 BANTUL</span>
+                <span>By {{$berita->user->name}}</span>
             </div>
             <div id="no-tailwind">
                 {!!$berita->content!!}

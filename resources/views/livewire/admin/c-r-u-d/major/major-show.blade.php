@@ -60,7 +60,7 @@
                                 {{$item->title}}
                             </td>
                             <td class="px-6 py-4">
-                                {{$item->description}}
+                                {!!$item->description!!}
                             </td>
                             <td class="px-6 py-4">
                                 <img src="{{$item->image}}" alt="Image" width="100">
