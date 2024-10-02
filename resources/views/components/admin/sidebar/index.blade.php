@@ -35,7 +35,7 @@
                     Berita
                 </x-admin.sidebar.item>
                 <x-admin.sidebar.item icon="fa-solid fa-handshake" href="{{route('admin.major')}}">
-                    Major
+                    Program Keahlian
                 </x-admin.sidebar.item>
                 
             </x-admin.sidebar.group>

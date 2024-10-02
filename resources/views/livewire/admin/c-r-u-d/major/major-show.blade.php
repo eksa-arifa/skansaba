@@ -1,6 +1,6 @@
 <div>
     <div class="mb-4">
-        <h1 class="text-xl font-bold uppercase underline decoration-blue-600">Major</h1>
+        <h1 class="text-xl font-bold uppercase underline decoration-blue-600">Program Keahlian</h1>
     </div>
     <div class="">
 
@@ -85,6 +85,8 @@
                 </tbody>
             </table>
 
+        </div>
+        <div class="my-2">
             {{$major->links()}}
         </div>
 

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LogoutController;
 use App\Livewire\Admin\Auth\Login;
 use App\Livewire\Admin\CRUD\Berita\BeritaCreate;
@@ -69,13 +70,17 @@ Route::prefix('admin')->group(function(){
         Route::prefix('berita')->group(function(){
             Route::get('/', BeritaShow::class)->name('admin.berita');
             Route::get('/create', BeritaCreate::class)->name('admin.berita.create');
+            Route::post('/create', [AdminController::class, 'beritaCreate'])->name('admin.berita.create.post');
             Route::get('/edit/{id}', BeritaEdit::class)->name('admin.berita.edit');
+            Route::put('/edit/{id}', [AdminController::class,'beritaUpdate'])->name('admin.berita.update.put');
         });
 
         Route::prefix('major')->group(function(){
             Route::get('/', MajorShow::class)->name('admin.major');
             Route::get('/create', MajorCreate::class)->name('admin.major.create');
+            Route::post('/create', [AdminController::class, 'majorCreate'])->name('admin.major.create.post');
             Route::get('/edit/{id}', MajorEdit::class)->name('admin.major.edit');
+            Route::put('/edit/{id}', [AdminController::class,'majorUpdate'])->name('admin.major.update.put');
         });
         
     });

@@ -4,59 +4,46 @@
     </div>
     <div class="">
 
-        <form wire:submit="submit" class="flex flex-col gap-4">
+        <form action="{{route('admin.major.create.post')}}" enctype="multipart/form-data" method="post" class="flex flex-col gap-4">
+            @csrf
             <div class="max-w-sm">
-                <div x-data="{ imagePreview: '' }" class="">
-                    <!-- Input untuk Upload Gambar -->
-                    <input type="file" class="hidden" wire:model="image" x-ref="image" @change="
-            const file = $refs.image.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = (e) => {
-                    imagePreview = e.target.result;
-                };
-                reader.readAsDataURL(file);
-            }
-        ">
+                <div x-data="{ image: null, previewImage(event) { 
+        const file = event.target.files[0]; 
+        if (file) { 
+            const reader = new FileReader(); 
+            reader.onload = (e) => this.image = e.target.result; 
+            reader.readAsDataURL(file); 
+        } else { 
+            this.image = null; 
+        } 
+    } }" class="flex flex-col w-72">
 
-                    <div class="flex flex-col gap-1">
-                        <label for="">Image Attachment</label>
-                        <button @click.prevent="$refs.image.click()"
-                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                            Upload Image
-                        </button>
+                    <label for="">Attachment</label>
+
+                    <input type="file" name="image" @change="previewImage" accept="image/*" class="block my-2 w-full">
+
+                    <div
+                        class="w-full h-72 border-2 border-gray-300 flex items-center justify-center bg-gray-200 rounded-md overflow-hidden">
+                        <template x-if="image">
+                            <img :src="image" alt="Image Preview" class="object-contain w-full h-full">
+                        </template>
+                        <template x-if="!image">
+                            <span class="text-gray-500">Gambar akan muncul di sini</span>
+                        </template>
                     </div>
-
-                    <!-- Preview Gambar -->
-                    <template x-if="imagePreview">
-                        <div class="relative">
-                            <img :src="imagePreview"
-                                class="rounded-lg w-full h-60 object-cover shadow-lg border-4 border-indigo-300">
-                            <button @click="imagePreview = ''"
-                                class="absolute top-2 right-2 bg-red-500 text-white p-2 rounded-full hover:bg-red-700">
-                                X
-                            </button>
-                        </div>
-                    </template>
-
                     @error('image') <span class="text-red-500">{{ $message }}</span> @enderror
                 </div>
 
-                @if ($image)
-                    <div class="mt-4">
-                        <p class="text-gray-700">File yang di-upload: {{ $image->getClientOriginalName() }}</p>
-                    </div>
-                @endif
             </div>
             <div class="flex flex-col gap-1">
                 <label for="title">Jurusan Name</label>
-                <input type="text" wire:model="name" required
+                <input type="text" name="name" required
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                     placeholder="Name...">
                 @error('title') {{$message}} @enderror
             </div>
             <div wire:ignore>
-                <textarea wire:model="description" id="summernote" required></textarea>
+                <textarea name="description" id="summernote" required></textarea>
             </div>
             @error('description') {{$message}} @enderror
 
@@ -80,11 +67,6 @@
                 ['table', ['table']],
                 ['view', ['codeview']]
             ],
-            callbacks: {
-                onChange: function (contents, $editable) {
-                    @this.set('description', contents)
-                }
-            }
         });
     </script>
 
