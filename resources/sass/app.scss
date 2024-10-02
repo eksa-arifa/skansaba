@@ -14,7 +14,9 @@
  *
  * See: https://github.com/laravel-frontend-presets/tall/issues/7
  */
- input:invalid, textarea:invalid, select:invalid {
+input:invalid,
+textarea:invalid,
+select:invalid {
     box-shadow: none;
 }
 
@@ -61,6 +63,7 @@
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
@@ -71,4 +74,8 @@
     animation: scroll 30s linear infinite;
     width: max-content;
     gap: 10px;
+}
+
+#no-tailwind *{
+    all: revert;
 }

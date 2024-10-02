@@ -10,9 +10,9 @@ Program Keahlian
             <img class="w-[350px] h-[400px] object-cover" src="{{$major->image ?? ''}}" alt="Jurusan">
             <div class="flex flex-col gap-5 min-h-[400px] w-auto">
                 <h1 class="uppercase text-xl font-bold border-b-2 border-gray-400">Program Keahlian {{$major->title}}</h1>
-                <p>
+                <div id="no-tailwind">
                     {!!$major->description!!}
-                </p>
+                </div>
             </div>
         </div>
     </div>

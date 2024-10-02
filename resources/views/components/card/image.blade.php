@@ -1,2 +1,2 @@
-<img class="w-full h-[280px] md:h-fit object-cover"
+<img class="w-full min-h-[155px] md:h-fit object-cover"
         src="{{$src}}" alt="konsentrasi keahlian">
