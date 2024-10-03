@@ -7,17 +7,17 @@
 <x-carousel.index/>
 
 
-<div class="w-screen py-16 overflow-x-hidden" x-data="{more: false}">
-    <div class="flex flex-col md:flex-row justify-center gap-10 overflow-hidden">
-        <img data-aos="fade-right" width="350" class="max-h-[350px] h-[350px]" src="https://smkn1bantul.wordpress.com/wp-content/uploads/2024/08/1.png" alt="kepala sekolah">
-        <div class="md:w-[600px] w-full px-10" data-aos="fade-left">
+<div class="w-screen py-16 px-10 md:px-36 overflow-x-hidden" x-data="{more: false}">
+    <div class="flex flex-col md:flex-row justify-center gap-4">
+        <img data-aos="fade-right" width="350" class="max-h-[350px] h-[350px] mx-auto md:mx-0 object-cover rounded-lg" src="/assets/images/kepsek.jpeg" alt="kepala sekolah">
+        <div class="md:w-[600px] w-full" data-aos="fade-left">
             <div class="border-b-2 border-blue-600">
                 <h2 class="text-4xl">Raharjo, S.IP, M.Pd</h2>
                 <p>Kepala Sekolah SMKN 1 Bantul</p>
             </div>
             <div class="w-full relative">
                 <p
-                    class="w-full relative overflow-hidden py-3 after:w-full after:absolute after:bottom-0 after:left-0 after:h-36 after:from-white after:to-transparent" :class="{'h-[280px]': !more, 'h-[670px]': more, 'after:bg-transparent': more, 'after:bg-gradient-to-t': !more}">
+                    class="w-full relative overflow-hidden py-3 after:w-full after:absolute after:bottom-0 after:left-0 after:h-36 after:from-white after:to-transparent" :class="{'h-[280px]': !more, 'h-fit': more, 'after:bg-transparent': more, 'after:bg-gradient-to-t': !more}">
                     Kami dengan bangga menyambut Anda di halaman website resmi sekolah kami. SMKN 1 Bantul adalah tempat
                     di
                     mana semangat belajar dan karakter berkembang bersama. Kami berkomitmen untuk memberikan pendidikan
@@ -44,7 +44,7 @@
                     tempat
                     yang inspiratif dan penuh semangat. Selamat mengeksplorasi informasi yang ada di sini!
                 </p>
-                <a x-on:click="more = !more" class="py-3 px-9 cursor-pointer text-nowrap bg-blue-600 text-white rounded-full absolute left-1/2 translate-x-[-50%] hover:bg-blue-700 bottom-0"><span x-show="!more">Show More</span><span x-show="more">Show Less</span></a>
+                <a x-on:click="more = !more" class="py-3 px-9 cursor-pointer text-nowrap bg-blue-600 text-white rounded-full absolute left-1/2 translate-x-[-50%] hover:bg-blue-700 bottom-0" :class="{'-bottom-14': more}"><span x-show="!more">Show More</span><span x-show="more">Show Less</span></a>
             </div>
         </div>
     </div>
