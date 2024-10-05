@@ -29,11 +29,11 @@
         <div>
             <h1 class="text-xl">Navigasi singkat</h1>
             <ul class="p-4">
-                <li class="list-disc"><a href="">Sejarah</a></li>
-                <li class="list-disc"><a href="">Sarana prasarana</a></li>
-                <li class="list-disc"><a href="">Visi & Misi</a></li>
-                <li class="list-disc"><a href="">Struktur organisasi</a></li>
-                <li class="list-disc"><a href="">Denah lokasi</a></li>
+                <li class="list-disc"><a href="{{route('sejarah')}}">Sejarah</a></li>
+                <li class="list-disc"><a href="{{route('sarana-prasarana')}}">Sarana prasarana</a></li>
+                <li class="list-disc"><a href="{{route('visi-misi')}}">Visi & Misi</a></li>
+                <li class="list-disc"><a href="{{route('struktur-organisasi')}}">Struktur organisasi</a></li>
+                <li class="list-disc"><a href="{{route('teaching-factory')}}">Teaching Factory</a></li>
             </ul>
         </div>
         <div>
