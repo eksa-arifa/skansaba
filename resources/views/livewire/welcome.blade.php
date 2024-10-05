@@ -75,17 +75,9 @@ Wassalamualaikum warahmatullahi wabarakatuh.
     </div>
 </div>
 
-<div class="w-screen py-4 px-10 md:px-36 bg-blue-600 text-white overflow-hidden">
+<div class="w-screen py-4 px-10 md:px-36 bg-blue-600 overflow-hidden">
     <div class="relative w-full">
         <div class="flex justify-center py-8 flex-wrap gap-2">
-            <!-- First set of images -->
-             @foreach($majors as $item)
-            <x-card.index>
-                <x-card.image src="{{$item->image ?? ''}}"/>
-                <x-card.title>{{$item->title}}</x-card.title>
-            </x-card.index>
-
-            @endforeach
         </div>
     </div>
 </div>
