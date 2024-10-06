@@ -10,7 +10,7 @@
 <div class="w-screen py-16 px-10 md:px-36 overflow-x-hidden" x-data="{more: false}">
     <div class="flex flex-col md:flex-row justify-center gap-4">
         <img data-aos="fade-right" width="350" class="max-h-[350px] h-[350px] mx-auto md:mx-0 object-cover rounded-lg" src="/assets/images/kepsek.jpeg" alt="kepala sekolah">
-        <div class="md:w-[600px] w-full" data-aos="fade-left">
+        <div class="w-full" data-aos="fade-left">
             <div class="border-b-2 border-blue-600">
                 <h2 class="text-4xl">Raharjo, S.IP, M.Pd</h2>
                 <p>Kepala Sekolah SMKN 1 Bantul</p>
