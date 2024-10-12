@@ -6,7 +6,7 @@
 
     <x-landing.berita :berita="$berita" :beritas="$beritas" />
 
-    <x-landing.prestasi />
+    <x-landing.prestasi :achievments="$achievments" />
 
 
 

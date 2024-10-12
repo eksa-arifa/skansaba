@@ -1,22 +1,11 @@
 <?php
 
-use App\Http\Controllers\AdminController;
-use App\Http\Controllers\LogoutController;
-use App\Livewire\Admin\Auth\Login;
-use App\Livewire\Admin\CRUD\Berita\BeritaCreate;
-use App\Livewire\Admin\CRUD\Berita\BeritaEdit;
-use App\Livewire\Admin\CRUD\Berita\BeritaShow;
-use App\Livewire\Admin\CRUD\Major\MajorCreate;
-use App\Livewire\Admin\CRUD\Major\MajorEdit;
-use App\Livewire\Admin\CRUD\Major\MajorShow;
-use App\Livewire\Admin\Dashboard;
-use App\Livewire\Admin\Settings;
+
 use App\Livewire\Berita;
 use App\Livewire\BeritaDetail;
 use App\Livewire\DenahLokasi;
 use App\Livewire\Download;
 use App\Livewire\Ekstrakurikuler;
-use App\Livewire\Gallery;
 use App\Livewire\OrganisasiSiswa;
 use App\Livewire\ProgramKeahlian;
 use App\Livewire\SaranaPrasarana;
@@ -62,30 +51,5 @@ Route::prefix('berita')->group(function(){
 
 
 
-Route::prefix('admin')->group(function(){
-    Route::middleware('auth')->group(function(){
-        Route::get('/', Dashboard::class)->name('admin.dashboard');
-        Route::get('/settings', Settings::class)->name('admin.settings');
 
-        Route::prefix('berita')->group(function(){
-            Route::get('/', BeritaShow::class)->name('admin.berita');
-            Route::get('/create', BeritaCreate::class)->name('admin.berita.create');
-            Route::post('/create', [AdminController::class, 'beritaCreate'])->name('admin.berita.create.post');
-            Route::get('/edit/{id}', BeritaEdit::class)->name('admin.berita.edit');
-            Route::put('/edit/{id}', [AdminController::class,'beritaUpdate'])->name('admin.berita.update.put');
-        });
-
-        Route::prefix('major')->group(function(){
-            Route::get('/', MajorShow::class)->name('admin.major');
-            Route::get('/create', MajorCreate::class)->name('admin.major.create');
-            Route::post('/create', [AdminController::class, 'majorCreate'])->name('admin.major.create.post');
-            Route::get('/edit/{id}', MajorEdit::class)->name('admin.major.edit');
-            Route::put('/edit/{id}', [AdminController::class,'majorUpdate'])->name('admin.major.update.put');
-        });
-        
-    });
-    Route::middleware('no-auth')->group(function(){
-        Route::get('/login', Login::class)->name('login');
-    });
-});
 

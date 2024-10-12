@@ -19,10 +19,4 @@ class Major extends Model
         "description",
         "slug"
     ];
-
-
-
-    public function lessons(): HasMany{
-        return $this->hasMany(Lesson::class);
-    }
 }
