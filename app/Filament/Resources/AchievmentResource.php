@@ -17,6 +17,7 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Facades\Storage;
 
 class AchievmentResource extends Resource
 {
@@ -34,7 +35,9 @@ class AchievmentResource extends Resource
                 TextInput::make('competition_field')->columnSpan(2)->required(),
                 TextInput::make('level')->columnSpan(2)->required(),
                 Select::make('ranking')->columnSpan(2)->options([
-                    '1' => 1, '2' => 2, '3' => 3
+                    '1' => 1,
+                    '2' => 2,
+                    '3' => 3
                 ])->required(),
             ]);
     }
@@ -78,4 +81,6 @@ class AchievmentResource extends Resource
             'edit' => Pages\EditAchievment::route('/{record}/edit'),
         ];
     }
+
+
 }
