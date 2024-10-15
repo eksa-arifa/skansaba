@@ -19,11 +19,11 @@
                                     class="w-full h-full object-cover group-hover:scale-125 transition-all duration-500" alt="">
                                 <div
                                     class="absolute left-0 -bottom-full group-hover:bottom-0 transition-all duration-500 w-full p-4 bg-[rgba(255,243,77,0.6)] text-center flex flex-col items-center">
-                                    <span class="font-bold text-white">{{$item->name}}</span>
-                                    <span class="text-white text-sm font-bold">{{$item->class}}</span>
-                                    <span class="text-white text-sm">{{$item->competition_field}}</span>
-                                    <span class="text-white text-sm font-bold">Juara {{$item->ranking}}</span>
-                                    <span class="text-white text-sm">Tingkat {{$item->level}}</span>
+                                    <span class="font-bold text-black">{{$item->name}}</span>
+                                    <span class="text-black text-sm font-bold">{{$item->class}}</span>
+                                    <span class="text-black text-sm">{{$item->competition_field}}</span>
+                                    <span class="text-black text-sm font-bold">Juara {{$item->ranking}}</span>
+                                    <span class="text-black text-sm">Tingkat {{$item->level}}</span>
                                 </div>
                             </div>
                             <div
