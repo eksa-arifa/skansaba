@@ -34,11 +34,7 @@ class AchievmentResource extends Resource
                 TextInput::make('class')->columnSpan(2)->required(),
                 TextInput::make('competition_field')->columnSpan(2)->required(),
                 TextInput::make('level')->columnSpan(2)->required(),
-                Select::make('ranking')->columnSpan(2)->options([
-                    '1' => 1,
-                    '2' => 2,
-                    '3' => 3
-                ])->required(),
+                TextInput::make('ranking')->columnSpan(2)->required(),
             ]);
     }
 

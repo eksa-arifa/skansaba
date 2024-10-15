@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string("class");
             $table->string("competition_field");
             $table->string("level");
-            $table->enum('ranking', [1,2,3]);
+            $table->string('ranking');
             $table->timestamps();
         });
     }
