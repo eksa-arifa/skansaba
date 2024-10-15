@@ -25,7 +25,7 @@ class BeritaDetail extends Component
                 throw new \Exception("Not Found", 404);
             }
 
-            return view('livewire.berita.berita-detail', ["berita" => $berita])->layout('layouts.app', ['majors'=>$this->majors]);
+            return view('livewire.berita.berita-detail', ["berita" => $berita])->layout('layouts.app', ['majors'=>$this->majors, 'title' => $berita->title]);
         }catch(\Exception $e){
             abort($e->getCode() ?? 500, $e->getMessage());
         }
