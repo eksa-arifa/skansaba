@@ -1,3 +1,6 @@
+@section('title')
+{{$berita->title}}
+@endsection
 <div>
     <x-header.index slug="{{$berita->slug}}" src="/storage/{{$berita->attachment->path}}">
         {{$berita->title}}
