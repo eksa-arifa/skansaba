@@ -1,7 +1,7 @@
 @extends('layouts.base')
 
 
-@if ($title)
+@if ($title ?? false)
 @section('title')
     {{$title}}
 @endsection
