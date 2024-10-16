@@ -103,5 +103,6 @@
             @endforeach
 
         </div>
+        <a href="{{route('prestasi')}}" class="py-3 px-9 cursor-pointer bg-white text-black rounded-full hover:bg-slate-400 w-fit block my-5 mx-auto">Show More</a>
     </div>
 </div>
