@@ -12,7 +12,7 @@ class Prestasi extends Component
 
     public function render()
     {
-        $achievments = Achievment::paginate(10);
+        $achievments = Achievment::latest()->paginate(10);
 
         return view('livewire.prestasi', ['achievments' => $achievments])->layout('layouts.app', ['majors' => $this->majors]);
     }
