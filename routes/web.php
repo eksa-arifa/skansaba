@@ -1,12 +1,12 @@
 <?php
 
-
 use App\Livewire\Berita;
 use App\Livewire\BeritaDetail;
 use App\Livewire\DenahLokasi;
 use App\Livewire\Download;
 use App\Livewire\Ekstrakurikuler;
 use App\Livewire\OrganisasiSiswa;
+use App\Livewire\Prestasi;
 use App\Livewire\ProgramKeahlian;
 use App\Livewire\SaranaPrasarana;
 use App\Livewire\Sejarah;
@@ -40,16 +40,10 @@ Route::get('/download', Download::class)->name('download');
 Route::get('/program-keahlian/{slug}', ProgramKeahlian::class)->name('program-keahlian');
 Route::get('/ekstrakurikuler', Ekstrakurikuler::class)->name('ekstrakurikuler');
 Route::get('/organisasi-siswa', OrganisasiSiswa::class)->name('organisasi-siswa');
-Route::get('/teaching-factory', TeachingFactory::class)->name('teaching-factory'); 
+Route::get('/teaching-factory', TeachingFactory::class)->name('teaching-factory');
+Route::get('/prestasi', Prestasi::class)->name('prestasi');
 
-
-Route::prefix('berita')->group(function(){
+Route::prefix('berita')->group(function () {
     Route::get('/', Berita::class)->name('berita.index');
     Route::get('/{slug}', BeritaDetail::class)->name('berita.detail');
 });
-
-
-
-
-
-
