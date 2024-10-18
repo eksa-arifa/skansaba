@@ -34,7 +34,6 @@ Route::get('/sejarah', Sejarah::class)->name('sejarah');
 Route::get('/visi-misi', VisiMisi::class)->name('visi-misi');
 
 Route::get('/struktur-organisasi', StrukturOrganisasi::class)->name('struktur-organisasi');
-Route::get('/denah-lokasi', DenahLokasi::class)->name('denah-lokasi');
 Route::get('/sarana-prasarana', SaranaPrasarana::class)->name('sarana-prasarana');
 Route::get('/download', Download::class)->name('download');
 Route::get('/program-keahlian/{slug}', ProgramKeahlian::class)->name('program-keahlian');
